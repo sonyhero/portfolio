@@ -1,8 +1,8 @@
-import s from './Skills.module.css'
+import s from './SkillsBlock.module.css'
 import sContainer from '../common/styles/Container.module.css'
 import {Skill} from './Skill/Skill.tsx';
 
-export const Skills = () => {
+export const SkillsBlock = () => {
     return (
         <div className={s.skillsBlock}>
             <div className={`${sContainer.container} ${s.skillsContainer}`}>

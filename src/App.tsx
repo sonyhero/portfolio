@@ -1,7 +1,8 @@
 import './App.css'
 import {Header} from './header/Header.tsx';
 import {MainBlock} from './mainBlock/MainBlock.tsx';
-import {Skills} from './skills/Skills.tsx';
+import {SkillsBlock} from './skillsBlock/SkillsBlock.tsx';
+import {ProjectsBlock} from './projectsBlock/ProjectsBlock.tsx';
 
 export const App = () => {
 
@@ -9,7 +10,8 @@ export const App = () => {
     <div className={'App'}>
         <Header/>
         <MainBlock/>
-        <Skills/>
+        <SkillsBlock/>
+        <ProjectsBlock/>
     </div>
   )
 }
