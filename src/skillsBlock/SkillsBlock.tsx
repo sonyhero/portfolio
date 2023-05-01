@@ -8,9 +8,10 @@ export const SkillsBlock = () => {
             <div className={`${sContainer.container} ${s.skillsContainer}`}>
                 <h2 className={s.title}>My Skills</h2>
                 <div className={s.skills}>
-                    <Skill title={'JS'} description={'description'}/>
+                    <Skill title={'JS'} description={'description фывфывфывфывфывфывфывфывфывфывфывфывфывфывфывфывфывфывфывфывфывфы'}/>
                     <Skill title={'CSS'} description={'description'}/>
-                    <Skill title={'React'} description={'description sssssssssssssssssssssssssssssssssssss'}/>
+                    <Skill title={'CSS'} description={'description'}/>
+                    <Skill title={'React'} description={'description'}/>
                 </div>
             </div>
         </div>

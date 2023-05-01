@@ -7,10 +7,13 @@
     text-align: center;
 }
 
-.icon {
-    height: 100px;
-    width: 200px;
+.imgContainer {
+    height: 200px;
+    width: 100%;
+    position: relative;
     background-image: url("https://timeweb.com/ru/community/article/05/05f3ef4974016ea1efdc5862bd14b5c6.jpg");
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +25,12 @@
     background-color: aliceblue;
 }
 
-.description {
+.title {
+    width: 80%;
+    background-color: #c4799c;
+}
 
+.description {
+    width: 80%;
+    background-color: #c4799c;
 }
