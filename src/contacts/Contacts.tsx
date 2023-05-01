@@ -1,0 +1,54 @@
+import s from './Contacts.module.css'
+import sContainer from '../common/styles/Container.module.css'
+
+export const Contacts = () => {
+    return (
+        <div className={s.contactsBlock}>
+            <div className={`${sContainer.container} ${s.contactsContainer}`}>
+                <h2 className={s.title}>Contacts</h2>
+                <form className={s.formContainer}>
+                    <div className="form-group">
+                        <label id="name-label" htmlFor="name">Имя</label>
+                        <input type="text" name="name" id="name" className="form-control" placeholder="Введите ваше имя"
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label id="email-label" htmlFor="email">Email</label>
+                        <input type="email" name="email" id="email" className="form-control"
+                               placeholder="Введите ваш Email"/>
+                    </div>
+
+                    <div className="form-group">
+                        <p>Вы бы порекомендовали меня другим компаниям?</p>
+                        <label>
+                            <input name="user-recommend" value="definitely" type="radio" className="input-radio"/>Определенно да</label>
+                        <label>
+                            <input name="user-recommend" value="maybe" type="radio" className="input-radio"/>Может
+                                быть</label>
+
+                        <label><input name="user-recommend" value="not-sure" type="radio" className="input-radio"/>Не
+                            уверен</label>
+                    </div>
+
+                    <div className="form-group">
+                        <p>Как вы узнали обо мне?</p>
+                        <select id="find-us" name="findUs" className="form-control">
+                            <option>Выберете вариант</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="vk">VK</option>
+                            <option value="friends">Друзья</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+
+                    <div className="form-group">
+                        <p>Хотите добавит комментарий или любое другое предложение</p>
+                        <textarea id="comments" className="input-textarea" name="comment"
+                                  placeholder="Оставьте их тут..."></textarea>
+                    </div>
+                </form>
+                <div className={s.aContainer}><a href=''>Send</a></div>
+            </div>
+        </div>
+    )
+}
