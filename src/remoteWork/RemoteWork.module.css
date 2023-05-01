@@ -1,0 +1,19 @@
+.remoteBlock {
+    height: 100vh;
+    background-color: #74ee9b;
+}
+
+.remoteContainer {
+    flex-direction: column;
+    /*justify-content: flex-start;*/
+}
+
+.title {
+    background-color: aliceblue;
+}
+
+.aContainer {
+    border: 1px solid;
+    padding: 5px 20px;
+    background-color: aliceblue;
+}
