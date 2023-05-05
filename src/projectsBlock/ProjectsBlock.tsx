@@ -1,6 +1,6 @@
 import s from './ProjecktsBlock.module.css'
 import sContainer from '../common/styles/Container.module.css'
-import {Project} from './Project/Project.tsx';
+import {Project} from './Project/Project';
 
 export const ProjectsBlock = () => {
     return (

@@ -1,6 +1,6 @@
 import s from './SkillsBlock.module.css'
 import sContainer from '../common/styles/Container.module.css'
-import {Skill} from './Skill/Skill.tsx';
+import {Skill} from './Skill/Skill';
 
 export const SkillsBlock = () => {
     return (
