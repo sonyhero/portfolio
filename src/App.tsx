@@ -1,5 +1,4 @@
-import './App.css'
-;
+import './App.css';
 import {Header} from './header/Header';
 import {MainBlock} from './mainBlock/MainBlock';
 import {SkillsBlock} from './skillsBlock/SkillsBlock';
