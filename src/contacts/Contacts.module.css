@@ -14,10 +14,31 @@
 
 .formContainer {
     border: 1px solid;
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.aContainer {
+.formGroup {
+    width: 100%;
+}
+
+/*.aContainer {*/
+/*    border: 1px solid;*/
+/*    padding: 5px 20px;*/
+/*    background-color: aliceblue;*/
+/*}*/
+
+.submitBtn {
     border: 1px solid;
-    padding: 5px 20px;
+    padding: 10px 20px;
     background-color: aliceblue;
+}
+
+@media screen and (max-width: 455px) {
+    .formContainer {
+        width: 100%;
+    }
 }

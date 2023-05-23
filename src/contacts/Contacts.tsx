@@ -7,30 +7,31 @@ export const Contacts = () => {
             <div className={`${sContainer.container} ${s.contactsContainer}`}>
                 <h2 className={s.title}>Contacts</h2>
                 <form className={s.formContainer}>
-                    <div className="form-group">
+                    <div className={s.formGroup}>
                         <label id="name-label" htmlFor="name">Имя</label>
                         <input type="text" name="name" id="name" className="form-control" placeholder="Введите ваше имя"
                         />
                     </div>
-                    <div className="form-group">
+
+                    <div className={s.formGroup}>
                         <label id="email-label" htmlFor="email">Email</label>
                         <input type="email" name="email" id="email" className="form-control"
                                placeholder="Введите ваш Email"/>
                     </div>
 
-                    <div className="form-group">
+                    <div className={s.formGroup}>
                         <p>Вы бы порекомендовали меня другим компаниям?</p>
                         <label>
-                            <input name="user-recommend" value="definitely" type="radio" className="input-radio"/>Определенно да</label>
+                            <input name="user-recommend" value="definitely" type="radio" className="input-radio"/>Определенно да</label><br/>
                         <label>
                             <input name="user-recommend" value="maybe" type="radio" className="input-radio"/>Может
-                                быть</label>
+                                быть</label><br/>
 
                         <label><input name="user-recommend" value="not-sure" type="radio" className="input-radio"/>Не
-                            уверен</label>
+                            уверен</label><br/>
                     </div>
 
-                    <div className="form-group">
+                    <div className={s.formGroup}>
                         <p>Как вы узнали обо мне?</p>
                         <select id="find-us" name="findUs" className="form-control">
                             <option>Выберете вариант</option>
@@ -41,13 +42,14 @@ export const Contacts = () => {
                         </select>
                     </div>
 
-                    <div className="form-group">
+                    <div className={s.formGroup}>
                         <p>Хотите добавит комментарий или любое другое предложение</p>
                         <textarea id="comments" className="input-textarea" name="comment"
                                   placeholder="Оставьте их тут..."></textarea>
                     </div>
                 </form>
-                <div className={s.aContainer}><a href=''>Send</a></div>
+                {/*<div className={s.aContainer}><a href=''>Send</a></div>*/}
+                <button type='submit' className={s.submitBtn}>Send</button>
             </div>
         </div>
     )
