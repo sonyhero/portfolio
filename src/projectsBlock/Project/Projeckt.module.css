@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-.imgContainer {
+.image {
     height: 200px;
     width: 100%;
     position: relative;
@@ -19,18 +19,32 @@
     align-items: center;
 }
 
-.aContainer {
+.viewBtn {
     border: 1px solid;
-    padding: 5px 20px;
+    padding: 10px 20px;
     background-color: aliceblue;
 }
 
-.title {
-    width: 80%;
+.projectInfo {
+    padding: 25px 20px;
+}
+
+.projectTitle {
     background-color: #c4799c;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 0 0 5px;
+    line-height: 1.2;
+    color: #000;
 }
 
 .description {
-    width: 80%;
     background-color: #c4799c;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.8;
 }
