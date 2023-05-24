@@ -1,11 +1,12 @@
 import s from './Contacts.module.css'
 import sContainer from '../common/styles/Container.module.css'
+import {Tittle} from "../common/components/title/Title";
 
 export const Contacts = () => {
     return (
         <div className={s.contactsBlock}>
             <div className={`${sContainer.container} ${s.contactsContainer}`}>
-                <h2 className={s.title}>Contacts</h2>
+                <Tittle text={'Contacts'}/>
                 <form className={s.formContainer}>
                     <div className={s.formGroup}>
                         <label id="name-label" htmlFor="name">Имя</label>

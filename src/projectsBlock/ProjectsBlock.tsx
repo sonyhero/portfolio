@@ -1,14 +1,13 @@
 import s from './ProjecktsBlock.module.css'
 import sContainer from '../common/styles/Container.module.css'
 import {Project} from './Project/Project';
+import {Tittle} from "../common/components/title/Title";
 
 export const ProjectsBlock = () => {
     return (
         <div className={s.projectsBlock}>
             <div className={`${sContainer.container} ${s.projectsContainer}`}>
-                <div className={s.title}>
-                    <h2 >My Projects</h2>
-                </div>
+                <Tittle text={'Projects'}/>
                 <div className={s.projects}>
                     <Project title={'Todolist'} description={'description'}/>
                     <Project title={'My Money'} description={'description'}/>

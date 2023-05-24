@@ -1,11 +1,12 @@
 import s from './RemoteWork.module.css'
 import sContainer from '../common/styles/Container.module.css'
+import {Tittle} from "../common/components/title/Title";
 
 export const RemoteWork = () => {
     return (
         <div className={s.remoteBlock}>
             <div className={`${sContainer.container} ${s.remoteContainer}`}>
-                <h2 className={s.title}>Consider remote work</h2>
+                <Tittle text={'Consider remote work'}/>
                 <div className={s.aContainer}><a href=''>Look</a></div>
             </div>
         </div>

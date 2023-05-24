@@ -1,0 +1,32 @@
+.title {
+    margin: 0 0 30px;
+    font-size: 30px;
+    -webkit-text-stroke: 1px #000;
+    color: transparent;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.1;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    letter-spacing: 3px;
+
+    position: relative;
+}
+
+.title h2 {
+    margin-top: 0;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    background: #b42f53;
+    width: 55px;
+    height: 3px;
+
+    /*Позиционирование псевдоэлемента*/
+    bottom: -30px;
+    left: 50%;
+    /*Выравнивание по центру*/
+    transform: translate(-50%, 50%);
+}
