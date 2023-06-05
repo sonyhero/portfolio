@@ -2,9 +2,9 @@ import s from './Contacts.module.css'
 import sContainer from '../common/styles/Container.module.css'
 import {Tittle} from '../common/components/title/Title';
 import React from 'react';
-import {StyleType, textH2White} from '../App';
+import {StyleBGCololType, textH2White} from '../App';
 
-export const Contacts: React.FC<StyleType> = (props) => {
+export const Contacts: React.FC<StyleBGCololType> = (props) => {
     return (
         <div style={props.style} className={s.contactsBlock}>
             <div className={`${sContainer.container} ${s.contactsContainer}`}>

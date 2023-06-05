@@ -3,11 +3,11 @@ import sContainer from '../common/styles/Container.module.css'
 import {Project} from './Project/Project';
 import {Tittle} from '../common/components/title/Title';
 import React from 'react';
-import {StyleType, textH2White} from '../App';
+import {StyleBGCololType, textH2White} from '../App';
 
 
 
-export const ProjectsBlock: React.FC<StyleType> = (props) => {
+export const ProjectsBlock: React.FC<StyleBGCololType> = (props) => {
 
     // const todoList = {
     //     color: 'blue',

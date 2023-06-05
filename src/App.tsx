@@ -7,11 +7,12 @@ import {RemoteWork} from './remoteWork/RemoteWork';
 import {Contacts} from './contacts/Contacts';
 import {Footer} from './footer/Footer';
 
-export type StyleType = {
+export type StyleBGCololType = {
     style: {
         backgroundColor: string
     }
 }
+
 export const textH2White = {
     // webkitTextStroke: '1px #d5d5d5',
     // color: 'black'

@@ -2,9 +2,9 @@ import s from './RemoteWork.module.css'
 import sContainer from '../common/styles/Container.module.css'
 import {Tittle} from '../common/components/title/Title';
 import React from 'react';
-import {StyleType, textH2Black} from '../App';
+import {StyleBGCololType, textH2Black} from '../App';
 
-export const RemoteWork: React.FC<StyleType> = (props) => {
+export const RemoteWork: React.FC<StyleBGCololType> = (props) => {
     return (
         <div style={props.style} className={s.remoteBlock}>
             <div className={`${sContainer.container} ${s.remoteContainer}`}>
