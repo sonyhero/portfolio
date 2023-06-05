@@ -7,16 +7,15 @@ export const Footer: React.FC<StyleType> = (props) => {
     return (
         <div style={props.style} className={s.footerBlock}>
             <div className={`${sContainer.container} ${s.footerContainer}`}>
-
-                    <h3 className={s.title}>Anton Acharatniuk</h3>
-
+                {/*<Tittle text={'Anton Acharatniuk'} style={textH2White}/>*/}
+                <h3 className={s.title}>Anton Acharatniuk</h3>
                 <div className={s.socialContainer}>
                     <div className={s.social}></div>
                     <div className={s.social}></div>
                     <div className={s.social}></div>
                     <div className={s.social}></div>
                 </div>
-                    <h6 className={s.title}>All rights reserved</h6>
+                <h6 className={s.titleFoot}>All rights reserved</h6>
             </div>
         </div>
     )

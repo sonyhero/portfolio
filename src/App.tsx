@@ -12,25 +12,42 @@ export type StyleType = {
         backgroundColor: string
     }
 }
+export const textH2White = {
+    // webkitTextStroke: '1px #d5d5d5',
+    // color: 'black'
+    webkitTextStroke: '1px #000',
+    color: '#d5d5d5'
+}
+
+export const textH2Black = {
+    // webkitTextStroke: '1px #000',
+    // color: '#d5d5d5'
+    webkitTextStroke: '1px #d5d5d5',
+    color: 'black'
+}
 
 export const App = () => {
 
-    const styleWhite = {
-        backgroundColor: '#d3d3d3'
+    const styleBackBlack = {
+        backgroundColor: '#3d3d3d'
     }
-    const styleBlack = {
-        backgroundColor: '#2A2A2AFF'
+    // const styleBlack = {
+    //     backgroundColor: '#2A2A2AFF'
+    // }
+
+    const styleBackWhite = {
+        backgroundColor: '#d3d3d3'
     }
 
     return (
         <div className={'App'}>
             <Header/>
             <MainBlock/>
-            <SkillsBlock style={styleBlack}/>
-            <ProjectsBlock style={styleWhite}/>
-            <RemoteWork style={styleBlack}/>
-            <Contacts style={styleWhite}/>
-            <Footer style={styleBlack}/>
+            <SkillsBlock style={styleBackWhite}/>
+            <ProjectsBlock style={styleBackBlack}/>
+            <RemoteWork style={styleBackWhite}/>
+            <Contacts style={styleBackBlack}/>
+            <Footer style={styleBackWhite}/>
         </div>
     )
 }

@@ -1,14 +1,14 @@
 import s from './Contacts.module.css'
 import sContainer from '../common/styles/Container.module.css'
-import {textH2Black, Tittle} from '../common/components/title/Title';
+import {Tittle} from '../common/components/title/Title';
 import React from 'react';
-import {StyleType} from '../App';
+import {StyleType, textH2White} from '../App';
 
 export const Contacts: React.FC<StyleType> = (props) => {
     return (
         <div style={props.style} className={s.contactsBlock}>
             <div className={`${sContainer.container} ${s.contactsContainer}`}>
-                <Tittle text={'Contacts'} style={textH2Black}/>
+                <Tittle text={'Contacts'} style={textH2White}/>
                 <form className={s.formContainer}>
                     <div className={s.formGroup}>
                         <label id="name-label" htmlFor="name">Имя</label>

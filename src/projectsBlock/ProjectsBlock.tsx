@@ -1,9 +1,9 @@
 import s from './ProjecktsBlock.module.css'
 import sContainer from '../common/styles/Container.module.css'
 import {Project} from './Project/Project';
-import {textH2Black, Tittle} from '../common/components/title/Title';
+import {Tittle} from '../common/components/title/Title';
 import React from 'react';
-import {StyleType} from '../App';
+import {StyleType, textH2White} from '../App';
 
 
 
@@ -45,7 +45,7 @@ export const ProjectsBlock: React.FC<StyleType> = (props) => {
     return (
         <div style={props.style} className={s.projectsBlock}>
             <div className={`${sContainer.container} ${s.projectsContainer}`}>
-                <Tittle text={'Projects'} style={textH2Black}/>
+                <Tittle text={'Projects'} style={textH2White}/>
                 <div className={s.projects}>
                     {mappedProjects}
                     {/*<Project title={'Todolist'} description={'description'}/>*/}
