@@ -1,9 +1,11 @@
 import s from './Footer.module.css'
 import sContainer from '../common/styles/Container.module.css'
+import React from 'react';
+import {StyleType} from '../App';
 
-export const Footer = () => {
+export const Footer: React.FC<StyleType> = (props) => {
     return (
-        <div className={s.footerBlock}>
+        <div style={props.style} className={s.footerBlock}>
             <div className={`${sContainer.container} ${s.footerContainer}`}>
 
                     <h3 className={s.title}>Anton Acharatniuk</h3>

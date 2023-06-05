@@ -1,6 +1,7 @@
 .projectsBlock {
     /*min-height: 100vh;*/
-    background-color: #9374ee;
+    /*background-color: #9374ee;*/
+    background-color: #d3d3d3;
 }
 
 .projectsContainer {
@@ -15,6 +16,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 @media screen and (max-width: 1275px) {
