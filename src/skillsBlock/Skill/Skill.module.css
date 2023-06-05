@@ -11,21 +11,22 @@
 
 h3 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
-    font-size: 20px;
+    font-size: 30px;
     letter-spacing: 1px;
     line-height: 1.8;
+    text-transform: uppercase;
 }
 
 
-.icon {
-    height: 70px;
-    width: 70px;
-    /*background-color: aqua;*/
-    /*background-image: url('./../../assets/SvgIcons/react.svg');*/
-}
+/*.icon {*/
+/*    height: 70px;*/
+/*    width: 70px;*/
+/*    !*background-color: aqua;*!*/
+/*    !*background-image: url('./../../assets/SvgIcons/react.svg');*!*/
+/*}*/
 
-.description {
+/*.description {*/
 
-}
+/*}*/
