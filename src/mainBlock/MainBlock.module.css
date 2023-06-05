@@ -1,15 +1,75 @@
 .mainBlock {
     height: 100vh;
-    background-color: #bd7387;
+    background-image:  url('../assets/image/mainPhoto1.jpg');
+    background-position: center -40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2a2a2a;
 }
 
 .greeting {
-    width: 300px;
-    background-color: #d5bcc2;
+    margin-top: 550px;
 }
 
-.photo{
-    width: 300px;
-    height: 400px;
-    background-color: antiquewhite;
+.firstName {
+    font-size: 35px;
+    -webkit-text-stroke: 1px #000;
+    color: #d5d5d5;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    letter-spacing: 3px;
+
+    /*position: relative;*/
+}
+
+.secondName {
+    font-size: 70px;
+    -webkit-text-stroke: 1px #d5d5d5;
+    color: black;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    letter-spacing: 3px;
+
+    /*position: relative;*/
+}
+
+.description {
+    /*background-color: #c4799c;*/
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 0 0 5px;
+    line-height: 1.2;
+    color: #d5d5d5;
+}
+
+@media screen and (max-width: 800px) {
+    .greeting {
+        margin-top: 300px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .firstName {
+        font-size: 25px;
+    }
+    .secondName {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .firstName {
+        font-size: 15px;
+    }
+    .secondName {
+        font-size: 30px;
+    }
 }

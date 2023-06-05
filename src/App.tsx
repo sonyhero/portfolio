@@ -7,17 +7,30 @@ import {RemoteWork} from './remoteWork/RemoteWork';
 import {Contacts} from './contacts/Contacts';
 import {Footer} from './footer/Footer';
 
+export type StyleType = {
+    style: {
+        backgroundColor: string
+    }
+}
+
 export const App = () => {
 
-  return (
-    <div className={'App'}>
-        <Header/>
-        <MainBlock/>
-        <SkillsBlock/>
-        <ProjectsBlock/>
-        <RemoteWork/>
-        <Contacts/>
-        <Footer/>
-    </div>
-  )
+    const styleWhite = {
+        backgroundColor: '#d3d3d3'
+    }
+    const styleBlack = {
+        backgroundColor: '#2A2A2AFF'
+    }
+
+    return (
+        <div className={'App'}>
+            <Header/>
+            <MainBlock/>
+            <SkillsBlock style={styleBlack}/>
+            <ProjectsBlock style={styleWhite}/>
+            <RemoteWork style={styleBlack}/>
+            <Contacts style={styleWhite}/>
+            <Footer style={styleBlack}/>
+        </div>
+    )
 }
