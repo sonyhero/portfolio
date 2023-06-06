@@ -39,16 +39,6 @@ export const SkillsBlock: React.FC<StyleBGCololType> = (props) => {
                 <Tittle text={'Skills'} style={textH2Black}/>
                 <div className={s.skills}>
                     {mappedSkills}
-                    {/*<Skill title={'CSS'} description={'description'}/>*/}
-                    {/*<Skill title={'CSS'} description={'description'}/>*/}
-                    {/*<Skill title={'React'} description={'description'}/>*/}
-                    {/*<Skill title={'React'} description={'description'}/>*/}
-                    {/*<Skill title={'React'} description={'description'}/>*/}
-                    {/*<Skill title={'React'} description={'description'}/>*/}
-                    {/*<Skill title={'React'} description={'description'}/>*/}
-                    {/*<Skill title={'React'} description={'description'}/>*/}
-                    {/*<Skill title={'React'} description={'description'}/>*/}
-                    {/*<Skill title={'React'} description={'description'}/>*/}
                 </div>
             </div>
         </div>

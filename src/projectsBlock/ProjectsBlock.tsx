@@ -48,10 +48,6 @@ export const ProjectsBlock: React.FC<StyleBGCololType> = (props) => {
                 <Tittle text={'Projects'} style={textH2White}/>
                 <div className={s.projects}>
                     {mappedProjects}
-                    {/*<Project title={'Todolist'} description={'description'}/>*/}
-                    {/*<Project title={'My Money'} description={'description'}/>*/}
-                    {/*<Project title={'Social network'} description={'description'}/>*/}
-                    {/*<Project title={'Clone Spotify'} description={'description'}/>*/}
                 </div>
             </div>
         </div>
