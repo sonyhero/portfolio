@@ -1,5 +1,5 @@
 .title {
-    margin: 0 0 30px;
+    margin: 30px 0 30px;
     font-size: 40px;
     -webkit-text-stroke: 1px #000;
     color: transparent;
@@ -22,7 +22,7 @@
     content: '';
     position: absolute;
     background: #b42f53;
-    width: 55px;
+    width: 100px;
     height: 3px;
 
     /*Позиционирование псевдоэлемента*/
