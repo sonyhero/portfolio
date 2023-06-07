@@ -9,26 +9,26 @@ import {skillsImg} from './skillsImg';
 export const SkillsBlock: React.FC<StyleBGCololType> = (props) => {
 
     const skills = [
-        {id:1, title: 'JavaScript', descriprion: '', img: skillsImg.javaScript},
-        {id:2, title: 'HTML', descriprion: '', img: skillsImg.html},
-        {id:3, title: 'CSS', descriprion: '', img: skillsImg.css},
-        {id:4, title: 'React', descriprion: '', img: skillsImg.react},
-        {id:5, title: 'TypeScript', descriprion: '', img: skillsImg.typeScript},
-        {id:6, title: 'Git', descriprion: '', img: skillsImg.git},
-        {id:7, title: 'ReduxToolkit', descriprion: '', img: skillsImg.reduxToolkit},
-        {id:8, title: 'ReduxSaga', descriprion: '', img: skillsImg.reduxSaga},
-        {id:9, title: 'Storybook', descriprion: '', img: skillsImg.storyBook},
-        {id:10, title: 'Postman', descriprion: '', img: skillsImg.postman},
-        {id:11, title: 'ReactQuery', descriprion: '', img: skillsImg.reactQuery},
-        {id:12, title: 'RestAPI', descriprion: '', img: skillsImg.restAPI},
-        {id:13, title: 'Swagger', descriprion: '', img: skillsImg.swagger},
-        {id:14, title: 'UnitTest', descriprion: '', img: skillsImg.unitTest},
-        {id:15, title: 'Jest', descriprion: '', img: skillsImg.jest},
+        {id:1, title: 'JavaScript', description: '', img: skillsImg.javaScript},
+        {id:4, title: 'React', description: '', img: skillsImg.react},
+        {id:5, title: 'TypeScript', description: '', img: skillsImg.typeScript},
+        {id:6, title: 'Git', description: '', img: skillsImg.git},
+        {id:7, title: 'ReduxToolkit', description: '', img: skillsImg.reduxToolkit},
+        {id:8, title: 'ReduxSaga', description: '', img: skillsImg.reduxSaga},
+        {id:9, title: 'Storybook', description: '', img: skillsImg.storyBook},
+        {id:10, title: 'Postman', description: '', img: skillsImg.postman},
+        {id:11, title: 'ReactQuery', description: '', img: skillsImg.reactQuery},
+        {id:12, title: 'RestAPI', description: '', img: skillsImg.restAPI},
+        {id:13, title: 'Swagger', description: '', img: skillsImg.swagger},
+        {id:14, title: 'UnitTest', description: '', img: skillsImg.unitTest},
+        {id:15, title: 'Jest', description: '', img: skillsImg.jest},
+        {id:2, title: 'HTML', description: '', img: skillsImg.html},
+        {id:3, title: 'CSS', description: '', img: skillsImg.css},
         ]
 
     const mappedSkills = skills.map(s=>{
         return(
-            <Skill key={s.id} title={s.title} description={s.descriprion} img={s.img} />
+            <Skill key={s.id} title={s.title} description={s.description} img={s.img} />
         )
     })
 
