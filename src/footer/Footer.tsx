@@ -8,13 +8,7 @@ export const Footer: React.FC<StyleBGCololType> = (props) => {
         <div style={props.style} className={s.footerBlock}>
             <div className={`${sContainer.container} ${s.footerContainer}`}>
                 {/*<Tittle text={'Anton Acharatniuk'} style={textH2White}/>*/}
-                <h3 className={s.title}>Anton Acharatniuk</h3>
-                <div className={s.socialContainer}>
-                    <div className={s.social}></div>
-                    <div className={s.social}></div>
-                    <div className={s.social}></div>
-                    <div className={s.social}></div>
-                </div>
+
                 <h6 className={s.titleFoot}>All rights reserved</h6>
             </div>
         </div>

@@ -3,6 +3,7 @@ import sContainer from '../common/styles/Container.module.css'
 import {Tittle} from '../common/components/title/Title';
 import React from 'react';
 import {StyleBGCololType, textH2White} from '../App';
+import {contactsImg} from './contactsImg';
 
 export const Contacts: React.FC<StyleBGCololType> = (props) => {
     return (
@@ -11,48 +12,28 @@ export const Contacts: React.FC<StyleBGCololType> = (props) => {
                 <Tittle text={'Contacts'} style={textH2White}/>
                 <form className={s.formContainer}>
                     <div className={s.formGroup}>
-                        <label id="name-label" htmlFor="name">Имя</label>
-                        <input type="text" name="name" id="name" className="form-control" placeholder="Введите ваше имя"
+                        <input type="text" name="name" placeholder="Your Name"
                         />
                     </div>
 
                     <div className={s.formGroup}>
-                        <label id="email-label" htmlFor="email">Email</label>
-                        <input type="email" name="email" id="email" className="form-control"
-                               placeholder="Введите ваш Email"/>
+                        <input type="email" name="email" placeholder="Your E-mail"/>
                     </div>
 
                     <div className={s.formGroup}>
-                        <p>Вы бы порекомендовали меня другим компаниям?</p>
-                        <label>
-                            <input name="user-recommend" value="definitely" type="radio" className="input-radio"/>Определенно да</label><br/>
-                        <label>
-                            <input name="user-recommend" value="maybe" type="radio" className="input-radio"/>Может
-                                быть</label><br/>
-
-                        <label><input name="user-recommend" value="not-sure" type="radio" className="input-radio"/>Не
-                            уверен</label><br/>
-                    </div>
-
-                    <div className={s.formGroup}>
-                        <p>Как вы узнали обо мне?</p>
-                        <select id="find-us" name="findUs" className="form-control">
-                            <option>Выберете вариант</option>
-                            <option value="instagram">Instagram</option>
-                            <option value="vk">VK</option>
-                            <option value="friends">Друзья</option>
-                            <option value="other">Другое</option>
-                        </select>
-                    </div>
-
-                    <div className={s.formGroup}>
-                        <p>Хотите добавит комментарий или любое другое предложение</p>
-                        <textarea id="comments" className="input-textarea" name="comment"
-                                  placeholder="Оставьте их тут..."></textarea>
+                        <textarea name="comment" placeholder="Type your message"/>
                     </div>
                 </form>
-                {/*<div className={s.aContainer}><a href=''>Send</a></div>*/}
-                <button type='submit' className={s.submitBtn}>Send</button>
+                <div>
+                    <input type="submit" value={'Sand Message'} className={s.submitBtn}/>
+                </div>
+                <h3 className={s.title}>YOU CAN FIND ME HERE</h3>
+                <div className={s.socialContainer}>
+                    <div className={s.social}><img src={contactsImg.github} alt="github"/></div>
+                    <div className={s.social}><img src={contactsImg.email} alt="email"/></div>
+                    <div className={s.social}><img src={contactsImg.telegram} alt="telegram"/></div>
+                    <div className={s.social}><img src={contactsImg.linkedin} alt="linkedin"/></div>
+                </div>
             </div>
         </div>
     )
