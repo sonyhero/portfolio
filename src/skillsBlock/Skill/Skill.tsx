@@ -11,9 +11,9 @@ export const Skill: React.FC<SkillPropsType> = (props) => {
     const {title, description, img} = props
     return (
         <div className={s.skill}>
-        <div className={s.icon}>
-            <img src={img} alt=""/>
-        </div>
+            <div>
+                <img src={img} alt="skill" className={s.icon}/>
+            </div>
             <h3>{title}</h3>
             <span className={s.description}>
                 {description}

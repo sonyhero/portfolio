@@ -22,14 +22,9 @@
     color: #000;
 }
 
-
-/*.icon {*/
-/*    height: 70px;*/
-/*    width: 70px;*/
-/*    !*background-color: aqua;*!*/
-/*    !*background-image: url('./../../assets/SvgIcons/react.svg');*!*/
-/*}*/
-
-/*.description {*/
-
-/*}*/
+.icon {
+    height: 70px;
+    width: 70px;
+    /*background-color: aqua;*/
+    /*background-image: url('./../../assets/SvgIcons/react.svg');*/
+}
