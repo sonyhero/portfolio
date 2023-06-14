@@ -27,12 +27,17 @@ export const Contacts: React.FC<StyleBGCololType> = (props) => {
                 <div>
                     <input type="submit" value={'Sand Message'} className={s.submitBtn}/>
                 </div>
-                <h3 className={s.title}>YOU CAN FIND ME HERE</h3>
-                <div className={s.socialContainer}>
-                    <div className={s.social}><img src={contactsImg.github} alt="github"/></div>
-                    <div className={s.social}><img src={contactsImg.email} alt="email"/></div>
-                    <div className={s.social}><img src={contactsImg.telegram} alt="telegram"/></div>
-                    <div className={s.social}><img src={contactsImg.linkedin} alt="linkedin"/></div>
+                    <h3 className={s.title}>YOU CAN FIND ME HERE</h3>
+                    <div className={s.socialContainer}>
+                        <div className={s.social}><a href={'https://github.com/sonyhero'}><img src={contactsImg.github}
+                                                                                               alt="github"/></a></div>
+                        <div className={s.social}><a href={'mailto:27anton06@gmail.com'}><img src={contactsImg.email}
+                                                                                              alt="email"/></a></div>
+                        <div className={s.social}><a href={'https://t.me/o_an_ton'}><img src={contactsImg.telegram}
+                                                                                         alt="telegram"/></a></div>
+                        <div className={s.social}><a href={'https://www.linkedin.com/in/anton-acharatniuk'}><img
+                            src={contactsImg.linkedin} alt="linkedin"/></a>
+                        </div>
                 </div>
             </div>
         </div>
