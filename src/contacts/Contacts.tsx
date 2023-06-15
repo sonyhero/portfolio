@@ -3,7 +3,7 @@ import sContainer from '../common/styles/Container.module.css'
 import {Tittle} from '../common/components/title/Title';
 import React from 'react';
 import {StyleBGCololType, textH2White} from '../App';
-import {contactsImg} from './contactsImg';
+import {svgContacts} from './svgContacts';
 
 export const Contacts: React.FC<StyleBGCololType> = (props) => {
     return (
@@ -29,14 +29,14 @@ export const Contacts: React.FC<StyleBGCololType> = (props) => {
                 </div>
                     <h3 className={s.title}>YOU CAN FIND ME HERE</h3>
                     <div className={s.socialContainer}>
-                        <div className={s.social}><a href={'https://github.com/sonyhero'}><img src={contactsImg.github}
+                        <div className={s.social}><a href={'https://github.com/sonyhero'}><img src={svgContacts.github}
                                                                                                alt="github"/></a></div>
-                        <div className={s.social}><a href={'mailto:27anton06@gmail.com'}><img src={contactsImg.email}
+                        <div className={s.social}><a href={'mailto:27anton06@gmail.com'}><img src={svgContacts.email}
                                                                                               alt="email"/></a></div>
-                        <div className={s.social}><a href={'https://t.me/o_an_ton'}><img src={contactsImg.telegram}
+                        <div className={s.social}><a href={'https://t.me/o_an_ton'}><img src={svgContacts.telegram}
                                                                                          alt="telegram"/></a></div>
                         <div className={s.social}><a href={'https://www.linkedin.com/in/anton-acharatniuk'}><img
-                            src={contactsImg.linkedin} alt="linkedin"/></a>
+                            src={svgContacts.linkedin} alt="linkedin"/></a>
                         </div>
                 </div>
             </div>
