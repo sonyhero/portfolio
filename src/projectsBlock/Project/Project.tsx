@@ -4,7 +4,7 @@ import React from 'react';
 type SkillPropsType = {
     title: string
     description: string
-    style: {backgroundImage: any}
+    style: {backgroundImage: string}
 }
 
 export const Project: React.FC<SkillPropsType> = (props) => {
