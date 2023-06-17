@@ -1,11 +1,10 @@
-import s from './Footer.module.css'
-import sContainer from '../common/styles/Container.module.css'
+import s from './Footer.module.scss'
+import sContainer from '../common/styles/Container.module.scss'
 import React from 'react';
-import {StyleBGCololType} from '../App';
 
-export const Footer: React.FC<StyleBGCololType> = (props) => {
+export const Footer: React.FC = () => {
     return (
-        <div style={props.style} className={s.footerBlock}>
+        <div className={s.footerBlock}>
             <div className={`${sContainer.container} ${s.footerContainer}`}>
                 {/*<Tittle text={'Anton Acharatniuk'} style={textH2White}/>*/}
 

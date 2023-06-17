@@ -1,4 +1,4 @@
-import s from './Projeckt.module.css'
+import s from './Projeckt.module.scss'
 import React from 'react';
 
 type SkillPropsType = {
@@ -15,10 +15,9 @@ export const Project: React.FC<SkillPropsType> = (props) => {
             <div className={s.image} style={style}>
                 <a className={s.viewBtn} href="">Look</a>
             </div>
-            <div className={s.projectInfo}><h3 className={s.projectTitle}>{title}</h3>
-                <span className={s.description}>
-                {description}
-            </span></div>
+            <div className={s.projectInfo}>
+                <h3 className={s.projectTitle}>{title}</h3>
+                <span className={s.description}>{description}</span></div>
         </div>
     )
 }

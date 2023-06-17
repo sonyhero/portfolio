@@ -1,4 +1,4 @@
-import s from './Header.module.css'
+import s from './Header.module.scss'
 import {Navigation} from '../navigation/Navigation';
 export const Header = () => {
     return (

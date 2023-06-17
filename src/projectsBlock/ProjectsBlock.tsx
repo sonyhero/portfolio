@@ -1,13 +1,11 @@
-import s from './ProjecktsBlock.module.css'
-import sContainer from '../common/styles/Container.module.css'
+import s from './ProjecktsBlock.module.scss'
+import sContainer from '../common/styles/Container.module.scss'
 import {Project} from './Project/Project';
 import {Tittle} from '../common/components/title/Title';
 import React from 'react';
-import {StyleBGCololType, textH2White} from '../App';
 import {svgProjects} from './svgProjects';
 
-
-export const ProjectsBlock: React.FC<StyleBGCololType> = (props) => {
+export const ProjectsBlock: React.FC = () => {
 
     const projects = [
         {
@@ -43,9 +41,9 @@ export const ProjectsBlock: React.FC<StyleBGCololType> = (props) => {
     })
 
     return (
-        <div style={props.style} className={s.projectsBlock}>
+        <div className={s.projectsBlock}>
             <div className={`${sContainer.container} ${s.projectsContainer}`}>
-                <Tittle text={'Projects'} style={textH2White}/>
+                <Tittle text={'Projects'}/>
                 <div className={s.projects}>
                     {mappedProjects}
                 </div>

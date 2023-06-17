@@ -1,12 +1,11 @@
-import s from './SkillsBlock.module.css'
-import sContainer from '../common/styles/Container.module.css'
+import s from './SkillsBlock.module.scss'
+import sContainer from '../common/styles/Container.module.scss'
 import {Skill} from './Skill/Skill';
 import {Tittle} from '../common/components/title/Title';
 import React from 'react';
-import {StyleBGCololType, textH2Black} from '../App';
 import {svgSkills} from './svgSkills';
 
-export const SkillsBlock: React.FC<StyleBGCololType> = (props) => {
+export const SkillsBlock: React.FC = () => {
 
     const skills = [
         {id:1, title: 'JavaScript', description: '', img: svgSkills.javaScript},
@@ -34,9 +33,9 @@ export const SkillsBlock: React.FC<StyleBGCololType> = (props) => {
 
 
     return (
-        <div style={props.style} className={s.skillsBlock}>
+        <div className={s.skillsBlock}>
             <div className={`${sContainer.container} ${s.skillsContainer}`}>
-                <Tittle text={'Skills'} style={textH2Black}/>
+                <Tittle text={'Skills'}/>
                 <div className={s.skills}>
                     {mappedSkills}
                 </div>

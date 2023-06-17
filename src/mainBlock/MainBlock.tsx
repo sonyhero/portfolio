@@ -1,5 +1,5 @@
-import s from './MainBlock.module.css'
-import sContainer from '../common/styles/Container.module.css'
+import s from './MainBlock.module.scss'
+import sContainer from '../common/styles/Container.module.scss'
 
 
 export const MainBlock = () => {

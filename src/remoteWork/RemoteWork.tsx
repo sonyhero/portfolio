@@ -1,14 +1,13 @@
-import s from './RemoteWork.module.css'
-import sContainer from '../common/styles/Container.module.css'
+import s from './RemoteWork.module.scss'
+import sContainer from '../common/styles/Container.module.scss'
 import {Tittle} from '../common/components/title/Title';
 import React from 'react';
-import {StyleBGCololType, textH2Black} from '../App';
 
-export const RemoteWork: React.FC<StyleBGCololType> = (props) => {
+export const RemoteWork: React.FC = () => {
     return (
-        <div style={props.style} className={s.remoteBlock}>
+        <div className={s.remoteBlock}>
             <div className={`${sContainer.container} ${s.remoteContainer}`}>
-                <Tittle text={'Consider remote work'} style={textH2Black}/>
+                <Tittle text={'Consider remote work'}/>
                 <a className={s.viewBtn} href=''>Look</a>
             </div>
         </div>
