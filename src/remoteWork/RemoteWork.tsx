@@ -9,7 +9,7 @@ export const RemoteWork: React.FC<StyleBGCololType> = (props) => {
         <div style={props.style} className={s.remoteBlock}>
             <div className={`${sContainer.container} ${s.remoteContainer}`}>
                 <Tittle text={'Consider remote work'} style={textH2Black}/>
-                <div className={s.aContainer}><a href=''>Look</a></div>
+                <a className={s.viewBtn} href=''>Look</a>
             </div>
         </div>
     )

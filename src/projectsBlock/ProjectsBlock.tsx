@@ -9,26 +9,6 @@ import {svgProjects} from './svgProjects';
 
 export const ProjectsBlock: React.FC<StyleBGCololType> = (props) => {
 
-    // const todoList = {
-    //     color: 'blue',
-    //     backgroundImage: 'url(' + imgUrl + ')',
-    // };
-    //
-    // const myMoney = {
-    //     color: 'blue',
-    //     backgroundImage: 'url(' + imgUrl + ')',
-    // };
-    //
-    // const socialNetwork = {
-    //     color: 'blue',
-    //     backgroundImage: 'url(' + imgUrl + ')',
-    // };
-    //
-    // const cloneSpotify = {
-    //     color: 'blue',
-    //     backgroundImage: 'url(' + imgUrl + ')',
-    // };
-
     const projects = [
         {
             id: 1,

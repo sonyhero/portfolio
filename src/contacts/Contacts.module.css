@@ -28,9 +28,21 @@
 
 
 .submitBtn {
-    border: 1px solid;
-    padding: 10px 20px;
-    background-color: aliceblue;
+    border: 1px solid #d3d3d3;
+    padding: 10px 30px;
+    /*background-color: aliceblue;*/
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 2px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    color: #d3d3d3;
+    margin-bottom: 50px;
 }
 
 .title {
