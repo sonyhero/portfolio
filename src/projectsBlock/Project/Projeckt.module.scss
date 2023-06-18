@@ -1,4 +1,5 @@
 @import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
 
 .project {
   width: 250px;
@@ -34,26 +35,19 @@
     .viewBtn {
       border: 1px solid $bgColor;
       padding: 10px 30px;
+      margin: 0 0 5px;
+      border-radius: 2px;
       background-color: $textSecondaryColor;
-      /*background-color: transparent;*/
-      /*background-color: #B42F53;*/
       opacity: 0.8;
       text-decoration: none;
-      border-radius: 2px;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 600;
-      font-style: normal;
-      text-transform: uppercase;
-      font-size: 16px;
-      letter-spacing: 1px;
-      margin: 0 0 5px;
-      line-height: 1.2;
       color: $primaryColor;
 
       -webkit-transition: all .5s;
       transition: all .5s;
       position: relative;
       z-index: 1;
+
+      @include text(600, 14px, uppercase, 1px, 1.2);
 
       &:hover {
         text-decoration: none;
@@ -73,26 +67,17 @@
     padding: 25px 20px;
 
     .projectTitle {
-      /*background-color: #c4799c;*/
-      font-family: 'Poppins', sans-serif;
-      font-weight: 600;
-      font-style: normal;
-      text-transform: uppercase;
-      font-size: 16px;
-      letter-spacing: 1px;
       margin: 0 0 5px;
-      line-height: 1.2;
       color: $textSecondaryColor;
+
+      //@include text(600, 16px, uppercase, 1px, 1.2);
+      @include text(600, 20px, uppercase, 1px, 1.2);
     }
 
     .description {
-      /*background-color: #c4799c;*/
-      font-family: 'Poppins', sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 14px;
-      line-height: 1.8;
       color: $textSecondaryColor;
+
+      @include text(400, 14px, none, 1px, 1.8);
     }
   }
 }

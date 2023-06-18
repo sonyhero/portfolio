@@ -1,17 +1,14 @@
 @import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
 
 .title {
   margin: 30px 0 30px;
-  font-size: 40px;
+  position: relative;
   -webkit-text-stroke: 1px $textColor;
   color: $textSecondaryColor;
-  font-weight: 900;
-  text-transform: uppercase;
-  line-height: 1.2;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  letter-spacing: 3px;
-  position: relative;
+
+  @include text(900, 40px, uppercase, 3px, 1.2);
+
   @media screen and (max-width: 630px) {
     font-size: 30px;
   }

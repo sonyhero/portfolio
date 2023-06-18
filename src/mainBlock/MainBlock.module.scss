@@ -1,11 +1,12 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
 .mainBlock {
   height: 100vh;
   background-image: url('../assets/image/mainPhoto1.jpg');
   background-position: center -40px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #3d3d3d;
-  /*background-color: #d3d3d3;*/
 }
 
 .greeting {
@@ -13,42 +14,25 @@
 }
 
 .firstName {
-  font-size: 35px;
-  -webkit-text-stroke: 1px #000;
-  color: #d5d5d5;
-  font-weight: 900;
-  text-transform: uppercase;
-  line-height: 1.2;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  letter-spacing: 3px;
+  -webkit-text-stroke: 1px $textColor;
+  color: $textSecondaryColor;
 
-  /*position: relative;*/
+  @include text(900, 35px, uppercase, 3px, 1.2);
 }
 
 .secondName {
   font-size: 70px;
-  -webkit-text-stroke: 1px #d5d5d5;
-  color: black;
-  font-weight: 900;
-  text-transform: uppercase;
-  line-height: 1.2;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  letter-spacing: 3px;
+  -webkit-text-stroke: 1px $textSecondaryColor;
+  color: $textColor;
 
-  /*position: relative;*/
+  @include text(900, 70px, uppercase, 3px, 1.2);
 }
 
 .description {
-  /*background-color: #c4799c;*/
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-size: 16px;
-  letter-spacing: 1px;
   margin: 0 0 5px;
-  line-height: 1.2;
-  color: #d5d5d5;
+  color: $textSecondaryColor;
+
+  @include text(400, 14px, none, 1px, 1.8);
 }
 
 @media screen and (max-width: 800px) {

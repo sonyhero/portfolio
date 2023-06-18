@@ -1,23 +1,58 @@
 @import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
 
 .footerBlock {
-  height: 80px;
+  height: 20vh;
   background-color: $bgSecondaryColor;
+
 
   .footerContainer {
     padding-top: 20px;
-    padding-bottom: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      .title {
+        h3 {
+          color: $textSecondaryColor;
+          position: relative;
+          padding-bottom: 15px;
+
+          @include text(600, 20px, uppercase, 1px, 1.2);
+        }
+      }
+
+      .socialContainer {
+        //margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .social {
+          margin: 5px;
+          padding: 5px;
+          background-color: $textSecondaryColor;
+          border-radius: 3px;
+        }
+      }
+    }
+
+    .titleFoot {
+
+      h6 {
+        color: $textSecondaryColor;
+
+        @include text(400, 12px, none, 1px, 1.2);
+      }
+
+    }
   }
 
-  .titleFoot {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.8;
-    margin: 0 0 5px;
-    color: $textSecondaryColor;
-  }
 }

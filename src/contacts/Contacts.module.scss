@@ -1,85 +1,74 @@
 @import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
 
 .contactsBlock {
   height: 60vh;
   background-color: $bgColor;
 
   .contactsContainer {
-    display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-around;
 
     .formContainer {
-      /*border: 1px solid;*/
       width: 70%;
+      gap: 10px;
+      display: flex;
       flex-direction: column;
       align-items: center;
 
-      .formGroup {
-        border: none;
-        letter-spacing: 2px;
-        color: $textSecondaryColor;
-        background: rgba(139, 145, 150, .12);
-        width: 100%;
-        position: relative;
-        height: auto;
-        padding: 15px;
-        box-shadow: none;
-      }
+       & input {
+          width: 100%;
+          box-shadow: none;
+          border: none;
+          background: $textSecondaryColor;
+          border-radius: 0;
+          color: $bgSecondaryColor;
+          padding: 15px;
+          height: 50px;
+        }
+
+       & textarea {
+          width: 100%;
+          box-shadow: none;
+          border: none;
+          background: $textSecondaryColor;
+          border-radius: 0;
+          color: $bgSecondaryColor;
+          height: 100px;
+          padding: 15px;
+          margin: 0 0 20px;
+        }
+
 
       @media screen and (max-width: 455px) {
         width: 100%;
       }
+
     }
 
-    div {
-      .submitBtn {
-        border: 1px solid $textSecondaryColor;
-        padding: 10px 30px;
-        /*background-color: aliceblue;*/
-        background-color: transparent;
-        text-decoration: none;
-        border-radius: 2px;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 600;
-        font-style: normal;
-        text-transform: uppercase;
-        font-size: 16px;
-        letter-spacing: 1px;
-        line-height: 1.2;
-        color: $textSecondaryColor;
-      }
-    }
-
-    .title {
-      font-family: 'Poppins', sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      text-transform: uppercase;
-      font-size: 16px;
-      letter-spacing: 1px;
-      /*margin: 10px;*/
-      line-height: 1.2;
+    .submitBtn {
+      border: 1px solid $textSecondaryColor;
+      padding: 10px 30px;
+      margin: 0 0 5px;
+      border-radius: 2px;
+      background-color: transparent;
+      text-decoration: none;
       color: $textSecondaryColor;
+      cursor: pointer;
 
-      position: relative;
-    }
+      -webkit-transition: all .5s;
+      transition: all .5s;
+      @include text(600, 14px, uppercase, 1px, 1.2);
 
-    .socialContainer {
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 70px;
 
-      .social {
-        margin: 5px;
-        padding: 5px;
+      &:hover {
+        text-decoration: none;
         background-color: $textSecondaryColor;
-        border-radius: 3px;
-        /*width: 50px;*/
+        color: $bgColor;
       }
     }
+
   }
 }
 

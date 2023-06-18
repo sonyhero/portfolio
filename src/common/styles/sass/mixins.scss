@@ -1,0 +1,9 @@
+@mixin text($fontWeight, $fontSize,$textTransform, $letterSpacing, $lineHeight) {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  text-transform: $textTransform;
+  letter-spacing: $letterSpacing;
+  line-height: $lineHeight;
+}
