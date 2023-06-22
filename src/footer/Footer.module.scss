@@ -7,10 +7,12 @@
 
 
   .footerContainer {
+    @include container();
+    @include flex(column, space-around, center, wrap);
     padding-top: 20px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+    //display: flex;
+    //justify-content: space-around;
+    //flex-direction: column;
 
     div {
       display: flex;

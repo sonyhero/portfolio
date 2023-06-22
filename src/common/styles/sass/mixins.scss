@@ -7,3 +7,17 @@
   letter-spacing: $letterSpacing;
   line-height: $lineHeight;
 }
+
+@mixin container() {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@mixin flex($direction, $justifyContent, $alignItems, $wrap ) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-wrap: $wrap;
+}

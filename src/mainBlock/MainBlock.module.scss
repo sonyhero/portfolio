@@ -9,6 +9,11 @@
   background-size: cover;
 }
 
+.container{
+  @include container();
+  @include flex(row, space-between, center, wrap);
+}
+
 .greeting {
   margin-top: 550px;
 }

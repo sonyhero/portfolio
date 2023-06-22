@@ -1,5 +1,4 @@
 import s from './ProjecktsBlock.module.scss'
-import sContainer from '../common/styles/Container.module.scss'
 import {Project} from './Project/Project';
 import {Tittle} from '../common/components/title/Title';
 import React from 'react';
@@ -42,7 +41,7 @@ export const ProjectsBlock: React.FC = () => {
 
     return (
         <div className={s.projectsBlock}>
-            <div className={`${sContainer.container} ${s.projectsContainer}`}>
+            <div className={s.projectsContainer}>
                 <Tittle text={'Projects'}/>
                 <div className={s.projects}>
                     {mappedProjects}

@@ -9,6 +9,8 @@
   }
 
   .remoteContainer {
+    @include container();
+    @include flex(column, space-around, center, wrap);
     flex-direction: column;
     justify-content: space-around;
 

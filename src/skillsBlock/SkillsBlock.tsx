@@ -1,5 +1,4 @@
 import s from './SkillsBlock.module.scss'
-import sContainer from '../common/styles/Container.module.scss'
 import {Skill} from './Skill/Skill';
 import {Tittle} from '../common/components/title/Title';
 import React from 'react';
@@ -34,7 +33,7 @@ export const SkillsBlock: React.FC = () => {
 
     return (
         <div className={s.skillsBlock}>
-            <div className={`${sContainer.container} ${s.skillsContainer}`}>
+            <div className={s.skillsContainer}>
                 <Tittle text={'Skills'}/>
                 <div className={s.skills}>
                     {mappedSkills}

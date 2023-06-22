@@ -1,12 +1,11 @@
 import s from './Footer.module.scss'
-import sContainer from '../common/styles/Container.module.scss'
 import React from 'react';
 import {svgContacts} from '../contacts/svgContacts';
 
 export const Footer: React.FC = () => {
     return (
         <div className={s.footerBlock}>
-            <div className={`${sContainer.container} ${s.footerContainer}`}>
+            <div className={s.footerContainer}>
                 {/*<Tittle text={'Anton Acharatniuk'} style={textH2White}/>*/}
                 <div>
                     <div className={s.title}><h3 >YOU CAN FIND ME HERE</h3></div>

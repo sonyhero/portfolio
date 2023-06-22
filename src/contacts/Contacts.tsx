@@ -1,12 +1,11 @@
 import s from './Contacts.module.scss'
-import sContainer from '../common/styles/Container.module.scss'
 import {Tittle} from '../common/components/title/Title';
 import React from 'react';
 
 export const Contacts: React.FC = () => {
     return (
         <div className={s.contactsBlock}>
-            <div className={`${sContainer.container} ${s.contactsContainer}`}>
+            <div className={s.contactsContainer}>
                 <Tittle text={'Contacts'}/>
                 <form className={s.formContainer}>
                     <input type={'text'} name={'name'} placeholder={'Your Name'}
