@@ -30,7 +30,7 @@
           font-size: 25px;
         }
         @media screen and (max-width: 480px) {
-          font-size: 45px;
+          font-size: 15px;
         }
       }
 
@@ -41,7 +41,7 @@
 
         @include text(900, 70px, uppercase, 3px, 1.2);
         @media screen and (max-width: 720px) {
-          font-size: 15px;
+          font-size: 45px;
         }
         @media screen and (max-width: 480px) {
           font-size: 30px;
