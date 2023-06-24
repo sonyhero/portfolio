@@ -15,23 +15,7 @@
     justify-content: space-around;
 
     .viewBtn {
-      border: 1px solid $textSecondaryColor;
-      padding: 10px 30px;
-      margin: 0 0 5px;
-      border-radius: 2px;
-      background-color: transparent;
-      text-decoration: none;
-      color: $textSecondaryColor;
-
-      -webkit-transition: all .5s;
-      transition: all .5s;
       @include text(600, 14px, uppercase, 1px, 1.2);
-
-      &:hover {
-        text-decoration: none;
-        background-color:$textSecondaryColor;
-        color: $bgSecondaryColor;
-      }
     }
   }
 }

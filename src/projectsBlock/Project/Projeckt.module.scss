@@ -35,54 +35,13 @@
     padding: 25px 20px;
 
     .viewBtn {
-    & a{
-      text-decoration: none;
-      border: none;
-      padding: 10px 30px;
-      width: 100%;
-      max-width: 160px;
-      outline: none;
-      color: $textSecondaryColor;
-      transition: all .5s;
-      position: relative;
-      z-index: 0;
-
       @include text(600, 20px, uppercase, 1px, 1.2);
-
-      &::after {
-        border-radius: 2px;
-        content: '';
-        position: absolute;
-        width: 50%;
-        left: 25%;
-        height: 10px;
-        background-color: $primaryColor;
-        bottom: 0;
-        z-index: -1;
-        transition: all 0.2s ease-in-out;
-      }
-
-      &:hover {
-        text-decoration: none;
-        color: $textSecondaryColor;
-
-        &::after {
-          border-radius: 2px;
-          width: 100%;
-          left: 0;
-          opacity: 0.8;
-          height: 110%;
-          transition: all 0.3s ease-in-out 0s;
-        }
-      }
-      }
     }
 
     .description {
       margin-top: 20px;
     & span{
       color: $textSecondaryColor;
-
 
       @include text(400, 14px, none, 1px, 1.8);
     }

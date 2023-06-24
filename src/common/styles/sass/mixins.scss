@@ -12,6 +12,7 @@
   height: 100%;
   width: 80%;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 @mixin flex($direction, $justifyContent, $alignItems, $wrap ) {

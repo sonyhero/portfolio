@@ -8,8 +8,6 @@
   .skillsContainer {
     @include container();
     @include flex(column, flex-start, center, wrap);
-    //flex-direction: column;
-    //justify-content: flex-start;
     .skills {
       margin-top: 30px;
       //border: 1px solid;

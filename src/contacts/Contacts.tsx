@@ -12,8 +12,9 @@ export const Contacts: React.FC = () => {
                     />
                     <input type={'email'} name={'email'} placeholder={'Your E-mail'}/>
                     <textarea name={'comment'} placeholder={'Type your message'}/>
+                    <button className={s.sbtBtn} type={'submit'} >Sand Message</button>
                 </form>
-                <button type={'submit'} className={s.submitBtn}>Sand Message</button>
+
             </div>
         </div>
     )

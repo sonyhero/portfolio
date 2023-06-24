@@ -1,5 +1,8 @@
 import s from './Projeckt.module.scss'
 import React from 'react';
+import {Button} from '../../common/components/Button/Button';
+
+
 
 type SkillPropsType = {
     title: string
@@ -15,7 +18,9 @@ export const Project: React.FC<SkillPropsType> = (props) => {
             <div className={s.image} style={style}>
             </div>
             <div className={s.projectInfo}>
-                <div className={s.viewBtn}><a href="">{title}</a> </div>
+                <div className={s.viewBtn}>
+                    <Button name={title}/>
+                </div>
                 <div className={s.description}><span >{description}</span></div>
             </div>
         </div>
