@@ -54,10 +54,6 @@
       background-color: $bgColor;
       max-width: none;
       @include text(600, 14px, uppercase, 1px, 1.2);
-      &::after {
-        width: 10%;
-        left: 45%;
-      }
       //border: 1px solid $textSecondaryColor;
       //padding: 10px 30px;
       //margin: 0 0 5px;
