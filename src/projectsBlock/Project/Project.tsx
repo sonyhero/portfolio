@@ -13,11 +13,11 @@ export const Project: React.FC<SkillPropsType> = (props) => {
 
         <div className={s.project}>
             <div className={s.image} style={style}>
-                <a className={s.viewBtn} href="">Look</a>
             </div>
             <div className={s.projectInfo}>
-                <h3 className={s.projectTitle}>{title}</h3>
-                <span className={s.description}>{description}</span></div>
+                <div className={s.viewBtn}><a href="">{title}</a> </div>
+                <div className={s.description}><span >{description}</span></div>
+            </div>
         </div>
     )
 }
