@@ -7,66 +7,53 @@
   background-position: center -40px;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.container{
-  @include container();
-  @include flex(row, space-between, center, wrap);
-}
-
-.greeting {
-  margin-top: 550px;
-}
-
-.firstName {
-  -webkit-text-stroke: 1px $textColor;
-  color: $textSecondaryColor;
-
-  @include text(900, 35px, uppercase, 3px, 1.2);
-}
-
-.secondName {
-  font-size: 70px;
-  -webkit-text-stroke: 1px $textSecondaryColor;
-  color: $textColor;
-
-  @include text(900, 70px, uppercase, 3px, 1.2);
-}
-
-.description {
-  margin: 0 0 5px;
-  color: $textSecondaryColor;
-
-  @include text(400, 14px, none, 1px, 1.8);
-}
-
-@media screen and (max-width: 800px) {
-  .mainBlock {
+  @media screen and (max-width: 800px) {
     background-position: center top;
   }
-  .greeting {
-    margin-top: 300px;
-  }
-}
+  //@media screen and (max-width: 720px) {
+  //  background-position: center top;
+  //}
+  .container{
+    @include container();
+    @include flex(row, space-between, center, wrap);
+    .greeting {
+      margin-top: 550px;
+      @media screen and (max-width: 800px) {
+        margin-top: 300px;
+      }
+      .firstName {
+        -webkit-text-stroke: 1px $textColor;
+        color: $textSecondaryColor;
 
-@media screen and (max-width: 720px) {
-  .mainBlock {
-    background-position: center top;
-  }
+        @include text(900, 35px, uppercase, 3px, 1.2);
+        @media screen and (max-width: 720px) {
+          font-size: 25px;
+        }
+        @media screen and (max-width: 480px) {
+          font-size: 45px;
+        }
+      }
 
-  .firstName {
-    font-size: 25px;
-  }
-  .secondName {
-    font-size: 45px;
-  }
-}
+      .secondName {
+        font-size: 70px;
+        -webkit-text-stroke: 1px $textSecondaryColor;
+        color: $textColor;
 
-@media screen and (max-width: 480px) {
-  .firstName {
-    font-size: 15px;
-  }
-  .secondName {
-    font-size: 30px;
+        @include text(900, 70px, uppercase, 3px, 1.2);
+        @media screen and (max-width: 720px) {
+          font-size: 15px;
+        }
+        @media screen and (max-width: 480px) {
+          font-size: 30px;
+        }
+      }
+
+      .description {
+        margin: 0 0 5px;
+        color: $textSecondaryColor;
+
+        @include text(400, 14px, none, 1px, 1.8);
+      }
+    }
   }
 }

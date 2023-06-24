@@ -4,6 +4,7 @@
 .skillsBlock {
   //min-height: 100vh;
   background-color: $bgSecondaryColor;
+
   .skillsContainer {
     @include container();
     @include flex(column, flex-start, center, wrap);
