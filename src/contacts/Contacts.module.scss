@@ -19,28 +19,48 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      @include text(400, 14px, none, 1px, 1.8);
 
-      & input {
+      .formArea,
+      .commentArea {
         width: 100%;
         box-shadow: none;
-        border: none;
+        border: 1px solid $bgSecondaryColor;
+        border-radius: 2px;
         background: $textSecondaryColor;
-        border-radius: 0;
         color: $bgSecondaryColor;
         padding: 15px;
-        height: 50px;
+
+        &:-webkit-autofill {
+          border: 1px solid $bgSecondaryColor;
+          -webkit-text-fill-color: $textSecondaryColor;
+          -webkit-box-shadow: 0 0 0 1000px $bgSecondaryColor inset;
+
+          &:focus {
+            border: 2px solid $bgSecondaryColor;
+          }
+        }
       }
 
-      & textarea {
-        width: 100%;
-        box-shadow: none;
-        border: none;
-        background: $textSecondaryColor;
-        border-radius: 0;
-        color: $bgSecondaryColor;
+      .formArea {
+        height: 50px;
+
+        &:focus {
+          border: 2px solid $bgSecondaryColor;
+          transition: all 0.4s ease-in-out 0s;
+        }
+      }
+
+      .commentArea {
         height: 100px;
-        padding: 15px;
         margin: 0 0 20px;
+        resize: none;
+
+        &:focus {
+          border: 2px solid $bgSecondaryColor;
+          transition: all 0.4s ease-in-out 0s;
+        }
+
       }
 
       @media screen and (max-width: 455px) {

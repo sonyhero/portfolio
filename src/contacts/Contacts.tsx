@@ -8,10 +8,10 @@ export const Contacts: React.FC = () => {
             <div className={s.contactsContainer}>
                 <Tittle text={'Contacts'}/>
                 <form className={s.formContainer}>
-                    <input type={'text'} name={'name'} placeholder={'Your Name'}
+                    <input className={s.formArea} type={'text'} name={'name'} placeholder={'Your Name'}
                     />
-                    <input type={'email'} name={'email'} placeholder={'Your E-mail'}/>
-                    <textarea name={'comment'} placeholder={'Type your message'}/>
+                    <input className={s.formArea} type={'email'} name={'email'} placeholder={'Your E-mail'}/>
+                    <textarea className={s.commentArea} name={'comment'} placeholder={'Type your message'}/>
                     <span>
                         <button className={s.sbtBtn} type={'submit'}>Sand Message</button>
                     </span>
