@@ -7,37 +7,32 @@ import {svgSkills} from './svgSkills';
 export const SkillsBlock: React.FC = () => {
 
     const skills = [
-        {id:1, title: 'JavaScript', description: '', img: svgSkills.javaScript},
-        {id:4, title: 'React', description: '', img: svgSkills.react},
-        {id:5, title: 'TypeScript', description: '', img: svgSkills.typeScript},
-        {id:6, title: 'Git', description: '', img: svgSkills.git},
-        {id:7, title: 'ReduxToolkit', description: '', img: svgSkills.reduxToolkit},
-        {id:8, title: 'ReduxSaga', description: '', img: svgSkills.reduxSaga},
-        {id:9, title: 'Storybook', description: '', img: svgSkills.storyBook},
-        {id:10, title: 'Postman', description: '', img: svgSkills.postman},
-        {id:11, title: 'ReactQuery', description: '', img: svgSkills.reactQuery},
-        {id:12, title: 'RestAPI', description: '', img: svgSkills.restAPI},
-        {id:13, title: 'Swagger', description: '', img: svgSkills.swagger},
-        {id:14, title: 'UnitTest', description: '', img: svgSkills.unitTest},
-        {id:15, title: 'Jest', description: '', img: svgSkills.jest},
-        {id:2, title: 'HTML', description: '', img: svgSkills.html},
-        {id:3, title: 'CSS', description: '', img: svgSkills.css},
-        ]
+        {title: 'JavaScript', description: '', img: svgSkills.javaScript},
+        {title: 'React', description: '', img: svgSkills.react},
+        {title: 'TypeScript', description: '', img: svgSkills.typeScript},
+        {title: 'Git', description: '', img: svgSkills.git},
+        {title: 'ReduxToolkit', description: '', img: svgSkills.reduxToolkit},
+        // {title: 'ReduxSaga', description: '', img: svgSkills.reduxSaga},
+        {title: 'Storybook', description: '', img: svgSkills.storyBook},
+        {title: 'Postman', description: '', img: svgSkills.postman},
+        {title: 'ReactQuery', description: '', img: svgSkills.reactQuery},
+        {title: 'RestAPI', description: '', img: svgSkills.restAPI},
+        {title: 'Swagger', description: '', img: svgSkills.swagger},
+        {title: 'UnitTest', description: '', img: svgSkills.unitTest},
+        {title: 'Jest', description: '', img: svgSkills.jest},
+        {title: 'HTML', description: '', img: svgSkills.html},
+        {title: 'CSS', description: '', img: svgSkills.css},
+    ]
 
-    const mappedSkills = skills.map(s=>{
-        return(
-            <Skill key={s.id} title={s.title} description={s.description} img={s.img} />
-        )
+    const mappedSkills = skills.map((s, index) => {
+        return <Skill key={index} title={s.title} description={s.description} img={s.img}/>
     })
-
 
     return (
         <div className={s.skillsBlock}>
             <div className={s.skillsContainer}>
                 <Tittle text={'Skills'}/>
-                <div className={s.skills}>
-                    {mappedSkills}
-                </div>
+                <div className={s.skills}>{mappedSkills}</div>
             </div>
         </div>
     )

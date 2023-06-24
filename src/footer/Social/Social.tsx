@@ -12,7 +12,6 @@ export const Social: React.FC<SocialType> = (props) => {
     const {link, img, alt} = props
 
     return (
-        <div className={s.social}><a href={link}><img src={img}
-                                                      alt={alt}/></a></div>
+        <div className={s.social}><a href={link}><img src={img} alt={alt}/></a></div>
     )
 }
