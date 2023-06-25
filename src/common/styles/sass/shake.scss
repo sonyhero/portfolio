@@ -36,14 +36,12 @@
   }
 }
 
-
 // reset
 $duration:100ms;
 $base-name:shake-base;
 $iteration:infinite;
 $timing:ease-in-out;
 $delay:0s;
-
 
 // The animation
 @mixin animation($name, $dur: $duration, $iter: $iteration, $tim: $timing, $del: $delay){
@@ -66,7 +64,7 @@ $delay:0s;
   &.freez {
     @include animation($base-name);
     &.shake-hard { @include animation(shake-hard); }
-    &.shake-slow { @include animation(shake-slow, 5s); }
+    &.shake-slow { @include animation(shake-slow, 10s); }
     &.shake-little { @include animation(shake-little); }
     &.shake-horizontal { @include animation(shake-horizontal); }
     &.shake-vertical { @include animation(shake-vertical); }
@@ -80,30 +78,30 @@ $delay:0s;
   }
 
   // Specific shakings
-  &.shake-hard:hover { @include animation(shake-hard); }
-  &.shake-slow:hover { @include animation(shake-slow, 5s); }
-  &.shake-little:hover { @include animation(shake-little); }
-  &.shake-horizontal:hover { @include animation(shake-horizontal); }
-  &.shake-vertical:hover { @include animation(shake-vertical); }
-  &.shake-rotate:hover { @include animation(shake-rotate); }
-  &.shake-opacity:hover { @include animation(shake-opacity, 200ms); }
-  &.shake-crazy:hover { @include animation(shake-crazy); }
-
-  &.shake-constant {
-    @include animation($base-name);
-    &.shake-hard { @include animation(shake-hard); }
-    &.shake-slow { @include animation(shake-slow, 5s); }
-    &.shake-little { @include animation(shake-little); }
-    &.shake-horizontal { @include animation(shake-horizontal); }
-    &.shake-vertical { @include animation(shake-vertical); }
-    &.shake-rotate { @include animation(shake-rotate); }
-    &.shake-opacity { @include animation(shake-opacity, 200ms); }
-    &.shake-crazy { @include animation(shake-crazy); }
-    &.hover-stop:hover{
-      animation-play-state: paused;
-    }
-  }
-  &.shake-delay { @include animation($base-name, $duration, $iteration, $timing, 4s); }
+  //&.shake-hard:hover { @include animation(shake-hard); }
+  //&.shake-slow:hover { @include animation(shake-slow, 5s); }
+  //&.shake-little:hover { @include animation(shake-little); }
+  //&.shake-horizontal:hover { @include animation(shake-horizontal); }
+  //&.shake-vertical:hover { @include animation(shake-vertical); }
+  //&.shake-rotate:hover { @include animation(shake-rotate); }
+  //&.shake-opacity:hover { @include animation(shake-opacity, 200ms); }
+  //&.shake-crazy:hover { @include animation(shake-crazy); }
+  //
+  //&.shake-constant {
+  //  @include animation($base-name);
+  //  &.shake-hard { @include animation(shake-hard); }
+  //  &.shake-slow { @include animation(shake-slow, 5s); }
+  //  &.shake-little { @include animation(shake-little); }
+  //  &.shake-horizontal { @include animation(shake-horizontal); }
+  //  &.shake-vertical { @include animation(shake-vertical); }
+  //  &.shake-rotate { @include animation(shake-rotate); }
+  //  &.shake-opacity { @include animation(shake-opacity, 200ms); }
+  //  &.shake-crazy { @include animation(shake-crazy); }
+  //  &.hover-stop:hover{
+  //    animation-play-state: paused;
+  //  }
+  //}
+  //&.shake-delay { @include animation($base-name, $duration, $iteration, $timing, 4s); }
 
 }
 

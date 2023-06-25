@@ -13,7 +13,6 @@ export const Skill: React.FC<SkillPropsType> = (props) => {
         <div className={s.skill}>
             <div className={s.skillWrap}>
                 <div className={s.icon}><img src={img} alt="skill"/></div>
-                <div className={s.circle}></div>
             </div>
             <h3 className={s.title}>{title}</h3>
             <span className={s.description}>

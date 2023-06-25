@@ -8,6 +8,6 @@ type ButtonType = {
 
 export const Button: React.FC<ButtonType> = ({name, link}) => {
     return (
-        <><a className={s.btn} href={link}>{name}</a></>
+        <a className={s.btn} href={link}>{name}</a>
     )
 }

@@ -8,10 +8,11 @@ type SkillPropsType = {
     title: string
     description: string
     style: {backgroundImage: string}
+    link: string
 }
 
 export const Project: React.FC<SkillPropsType> = (props) => {
-    const {title, description, style} = props
+    const {title, description, style, link} = props
     return (
 
         <div className={s.project}>
@@ -19,7 +20,7 @@ export const Project: React.FC<SkillPropsType> = (props) => {
             </div>
             <div className={s.projectInfo}>
                 <div className={s.viewBtn}>
-                    <Button name={title}/>
+                    <Button name={title} link={link}/>
                 </div>
                 <div className={s.description}><span >{description}</span></div>
             </div>

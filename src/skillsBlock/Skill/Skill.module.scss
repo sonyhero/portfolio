@@ -16,47 +16,18 @@
     border-radius: 50%;
     border: 1px solid $textSecondaryColor;
     @include flex(column, center, center, wrap);
-    //display: flex;
-    //align-items: center;
-    //justify-content: center;
     .icon {
       //@extend .shake.freez.shake-slow;
       & img {
-
         height: 50px;
         width: 50px;
       }
-
-
     }
     &:hover .icon {
       @extend .shake.freez.shake-slow;
     }
-
-    .circle {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background-color: white;
-      animation: move 2.5s linear infinite;
-      offset-path: path("M 50,50 m -50,0 a 50,50 0 1,0 100,0 a 50,50 0 1,0 -100,0");
-      animation-play-state: paused;
-    }
-
-    &:hover .circle {
-      animation-play-state: running;
-    }
   }
 
-  @keyframes move {
-    100% {
-      offset-distance: 100%;
-      transform: rotate(360deg);
-    }
-  }
 
   .title {
     margin: 10px 5px;

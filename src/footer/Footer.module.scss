@@ -10,45 +10,39 @@
     @include container();
     @include flex(column, space-around, center, wrap);
     padding-top: 20px;
-    //display: flex;
-    //justify-content: space-around;
-    //flex-direction: column;
 
-    div {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-
-      .title {
-        h3 {
-          color: $textSecondaryColor;
-          position: relative;
-          padding-bottom: 15px;
-
-          @include text(600, 20px, uppercase, 1px, 1.2);
-        }
-      }
-
-      .socialContainer {
-        //margin-bottom: 10px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-
-      }
+    .title {
+      color: $textSecondaryColor;
+      position: relative;
+      padding-bottom: 15px;
+      @include text(600, 20px, uppercase, 1px, 1.2);
     }
 
-    .titleFoot {
+    .socialContainer {
+      width: 250px;
+      @include flex(row, space-between, center, wrap);
 
-      h6 {
-        color: $textSecondaryColor;
+      .social {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: $bgSecondaryColor;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
 
-        @include text(400, 12px, none, 1px, 1.2);
+        &:hover {
+          background-color: $primaryColor;
+          transition: all 0.3s ease-in-out 0s;
+        }
       }
-
     }
   }
 
+  .titleFoot {
+    h6 {
+      color: $textSecondaryColor;
+      @include text(400, 12px, none, 1px, 1.2);
+    }
+  }
 }
