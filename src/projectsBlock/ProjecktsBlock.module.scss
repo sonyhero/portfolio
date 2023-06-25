@@ -1,5 +1,6 @@
 @import "src/common/styles/sass/variables";
 @import "src/common/styles/sass/mixins";
+
 .projectsBlock {
   /*min-height: 100vh;*/
   background-color: $bgColor;
@@ -7,23 +8,13 @@
   .projectsContainer {
     @include container();
     @include flex(column, flex-start, center, wrap);
-    //flex-direction: column;
-    //justify-content: flex-start;
 
     .projects {
       margin-top: 30px;
-      /*border: 1px solid black;*/
       width: 100%;
       @include flex(row, space-around, flex-start, wrap);
-      //display: flex;
-      //justify-content: space-around;
-      //flex-wrap: wrap;
-      //align-items: flex-start;
       @media screen and (max-width: 1275px) {
         @include flex(column, center, center, wrap);
-        //flex-direction: column;
-        //justify-content: center;
-        //align-items: center;
       }
     }
   }

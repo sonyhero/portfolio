@@ -9,9 +9,6 @@
   .contactsContainer {
     @include container();
     @include flex(column, space-around, center, wrap);
-    //flex-direction: column;
-    //align-items: center;
-    //justify-content: space-around;
 
     .formContainer {
       width: 70%;
@@ -23,50 +20,33 @@
 
       .formArea,
       .commentArea {
-        width: 100%;
+        width: 80%;
         box-shadow: none;
         border: 1px solid $bgSecondaryColor;
         border-radius: 2px;
-        background: $textSecondaryColor;
-        color: $bgSecondaryColor;
+        background: $bgSecondaryColor;
+        color: $textSecondaryColor;
         padding: 15px;
 
-        &:-webkit-autofill {
-          border: 1px solid $bgSecondaryColor;
-          -webkit-text-fill-color: $textSecondaryColor;
-          -webkit-box-shadow: 0 0 0 1000px $bgSecondaryColor inset;
-
-          &:focus {
-            border: 2px solid $bgSecondaryColor;
-          }
+        &:focus {
+          transition: all 0.4s ease-in-out 0s;
+          box-shadow: 5px 5px 5px -3px $textSecondaryColor;
         }
       }
 
       .formArea {
         height: 50px;
-
-        &:focus {
-          border: 2px solid $bgSecondaryColor;
-          transition: all 0.4s ease-in-out 0s;
-        }
       }
 
       .commentArea {
         height: 100px;
         margin: 0 0 20px;
         resize: none;
-
-        &:focus {
-          border: 2px solid $bgSecondaryColor;
-          transition: all 0.4s ease-in-out 0s;
-        }
-
       }
 
       @media screen and (max-width: 455px) {
         width: 100%;
       }
-
     }
 
     .sbtBtn {
@@ -74,42 +54,6 @@
       background-color: $bgColor;
       max-width: none;
       @include text(600, 14px, uppercase, 1px, 1.2);
-      //border: 1px solid $textSecondaryColor;
-      //padding: 10px 30px;
-      //margin: 0 0 5px;
-      //border-radius: 2px;
-      //background-color: transparent;
-      //text-decoration: none;
-      //color: $textSecondaryColor;
-      //cursor: pointer;
-      //
-      //-webkit-transition: all .5s;
-      //transition: all .5s;
-      //@include text(600, 14px, uppercase, 1px, 1.2);
-      //
-      //
-      //&:hover {
-      //  text-decoration: none;
-      //  background-color: $textSecondaryColor;
-      //  color: $bgColor;
-      //}
     }
   }
 }
-
-
-/*.title::before {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    background: #b42f53;*/
-/*    width: 100px;*/
-/*    height: 3px;*/
-
-/*    !*Позиционирование псевдоэлемента*!*/
-/*    bottom: -30px;*/
-/*    left: 50%;*/
-/*    !*Выравнивание по центру*!*/
-/*    transform: translate(-50%, 50%);*/
-/*}*/
-
-

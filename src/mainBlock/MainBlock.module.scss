@@ -10,21 +10,20 @@
   @media screen and (max-width: 800px) {
     background-position: center top;
   }
-  //@media screen and (max-width: 720px) {
-  //  background-position: center top;
-  //}
-  .container{
+
+  .container {
     @include container();
     @include flex(row, space-between, center, wrap);
+
     .greeting {
       margin-top: 550px;
       @media screen and (max-width: 800px) {
         margin-top: 300px;
       }
+
       .firstName {
         -webkit-text-stroke: 1px $textColor;
         color: $textSecondaryColor;
-
         @include text(900, 35px, uppercase, 3px, 1.2);
         @media screen and (max-width: 720px) {
           font-size: 25px;
@@ -38,7 +37,6 @@
         font-size: 70px;
         -webkit-text-stroke: 1px $textSecondaryColor;
         color: $textColor;
-
         @include text(900, 70px, uppercase, 3px, 1.2);
         @media screen and (max-width: 720px) {
           font-size: 45px;
