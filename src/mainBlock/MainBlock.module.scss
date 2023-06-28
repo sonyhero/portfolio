@@ -25,12 +25,13 @@
         @media screen and (max-width: 720px) {
           font-size: 25px;
         }
-        @media screen and (max-width: 480px) {
-          font-size: 15px;
-        }
         @media screen and (max-height: 850px) {
           font-size: 25px;
         }
+        @media screen and (max-width: 480px) {
+          font-size: 15px;
+        }
+
       }
 
       .secondName {
@@ -41,12 +42,13 @@
         @media screen and (max-width: 720px) {
           font-size: 45px;
         }
-        @media screen and (max-width: 480px) {
-          font-size: 30px;
-        }
         @media screen and (max-height: 850px) {
           font-size: 45px;
         }
+        @media screen and (max-width: 480px) {
+          font-size: 30px;
+        }
+
       }
 
       .description {
