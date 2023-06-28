@@ -2,7 +2,7 @@
 @import "src/common/styles/sass/mixins";
 
 .footerBlock {
-  height: 20vh;
+  //height: 20vh;
   background-color: $bgSecondaryColor;
 
 
@@ -41,6 +41,7 @@
 
   .titleFoot {
     h6 {
+      margin-top: 20px;
       color: $textSecondaryColor;
       @include text(400, 12px, none, 1px, 1.2);
     }

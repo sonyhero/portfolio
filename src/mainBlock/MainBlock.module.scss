@@ -13,13 +13,10 @@
 
   .container {
     @include container();
-    @include flex(row, space-between, center, wrap);
+    @include flex(row, space-between, flex-end, wrap);
 
     .greeting {
-      margin-top: 550px;
-      @media screen and (max-width: 800px) {
-        margin-top: 300px;
-      }
+      margin-bottom: 120px;
 
       .firstName {
         -webkit-text-stroke: 1px $textColor;
@@ -30,6 +27,9 @@
         }
         @media screen and (max-width: 480px) {
           font-size: 15px;
+        }
+        @media screen and (max-height: 850px) {
+          font-size: 25px;
         }
       }
 
@@ -43,6 +43,9 @@
         }
         @media screen and (max-width: 480px) {
           font-size: 30px;
+        }
+        @media screen and (max-height: 850px) {
+          font-size: 45px;
         }
       }
 
