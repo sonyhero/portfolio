@@ -1,6 +1,7 @@
 import s from './MainBlock.module.scss'
 import {Fade} from 'react-awesome-reveal';
-
+import React from 'react';
+import ReactTypingEffect from 'react-typing-effect';
 
 export const MainBlock = () => {
     return (
@@ -12,7 +13,9 @@ export const MainBlock = () => {
                     <div className={s.greeting}>
                         <div className={s.firstName}><h1>Anton</h1></div>
                         <div className={s.secondName}><span>Acharatniuk</span></div>
-                        <div className={s.description}><span>Creative Front-end developer</span></div>
+                        <div className={s.description}>
+                            <ReactTypingEffect speed={200} text={['Creative Front-end developer']}/>
+                        </div>
                     </div>
                 </Fade>
             </div>
