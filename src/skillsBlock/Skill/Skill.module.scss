@@ -14,7 +14,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 1px solid $textSecondaryColor;
+    border: 2px solid $textSecondaryColor;
     @include flex(column, center, center, wrap);
     .icon {
       //@extend .shake.freez.shake-slow;

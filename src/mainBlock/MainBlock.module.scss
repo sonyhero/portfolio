@@ -21,15 +21,15 @@
       .firstName {
         -webkit-text-stroke: 1px $textColor;
         color: $textSecondaryColor;
-        @include text(900, 35px, uppercase, 3px, 1.2);
+        @include text(900, 70px, uppercase, 3px, 1.2);
         @media screen and (max-width: 720px) {
-          font-size: 25px;
+          font-size: 45px;
         }
         @media screen and (max-height: 850px) {
-          font-size: 25px;
+          font-size: 45px;
         }
         @media screen and (max-width: 480px) {
-          font-size: 15px;
+          font-size: 30px;
         }
 
       }
