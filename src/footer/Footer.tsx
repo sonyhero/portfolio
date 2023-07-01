@@ -1,6 +1,7 @@
 import s from './Footer.module.scss'
 import React from 'react';
 import {svgSocials} from '../assets/svgContacts/svgSocials';
+import {Fade} from 'react-awesome-reveal';
 
 export const Footer: React.FC = () => {
 
@@ -39,11 +40,13 @@ export const Footer: React.FC = () => {
     return (
         <div className={s.footerBlock}>
             <div className={s.footerContainer}>
-                    <h3 className={s.title}>YOU CAN FIND ME HERE</h3>
-                    <div className={s.socialContainer}>
+                <Fade direction={'down'} duration={1500}><h3 className={s.title}>YOU CAN FIND ME HERE</h3></Fade>
+                <Fade  direction={'up'} duration={1500}><div className={s.socialContainer}>
                         {mappedSocials}
                     </div>
-                <div className={s.titleFoot}><h6>2023 All rights reserved</h6></div>
+                </Fade>
+                <Fade  direction={'up'} duration={1500} delay={500}><div className={s.titleFoot}><h6>2023 All rights reserved</h6></div>
+                </Fade>
             </div>
         </div>
     )

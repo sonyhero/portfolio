@@ -3,6 +3,7 @@ import {Project} from './Project/Project';
 import {Tittle} from '../common/components/title/Title';
 import React from 'react';
 import {svgProjects} from './svgProjects';
+import {Fade} from 'react-awesome-reveal';
 
 export const ProjectsBlock: React.FC = () => {
 
@@ -42,10 +43,12 @@ export const ProjectsBlock: React.FC = () => {
     return (
         <div className={s.projectsBlock}>
             <div className={s.projectsContainer}>
-                <Tittle text={'Projects'}/>
+                <Fade direction={'down'} duration={1500}><Tittle text={'Projects'}/></Fade>
+                <Fade duration={1500} delay={300}>
                 <div className={s.projects}>
                     {mappedProjects}
                 </div>
+                </Fade>
             </div>
         </div>
     )

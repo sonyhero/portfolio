@@ -3,6 +3,7 @@ import {Skill} from './Skill/Skill';
 import {Tittle} from '../common/components/title/Title';
 import React from 'react';
 import {svgSkills} from './svgSkills';
+import {Fade} from 'react-awesome-reveal';
 
 export const SkillsBlock: React.FC = () => {
 
@@ -31,8 +32,10 @@ export const SkillsBlock: React.FC = () => {
     return (
         <div className={s.skillsBlock}>
             <div className={s.skillsContainer}>
-                <Tittle text={'Skills'}/>
-                <div className={s.skills}>{mappedSkills}</div>
+                <Fade direction={'down'} duration={1500}><Tittle text={'Skills'}/></Fade>
+                <Fade duration={1500} delay={300}>
+                    <div className={s.skills}>{mappedSkills}</div>
+                </Fade>
             </div>
         </div>
     )
