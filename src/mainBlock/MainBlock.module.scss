@@ -2,14 +2,16 @@
 @import "src/common/styles/sass/mixins";
 
 .mainBlock {
-  height: 100vh;
+  height: 105vh;
   background-image: url('../assets/image/mainPhoto1.jpg');
   background-position: center -40px;
   background-repeat: no-repeat;
   background-size: cover;
   @media screen and (max-width: 800px) {
     background-position: center top;
+    background-size: cover;
   }
+
 
   .container {
     @include container();
