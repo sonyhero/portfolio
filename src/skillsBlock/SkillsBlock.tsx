@@ -30,7 +30,7 @@ export const SkillsBlock: React.FC = () => {
     })
 
     return (
-        <div className={s.skillsBlock}>
+        <div id={'skills'} className={s.skillsBlock}>
             <div className={s.skillsContainer}>
                 <Fade direction={'down'} duration={1500}><Tittle text={'Skills'}/></Fade>
                 <Fade duration={1500} delay={300}>

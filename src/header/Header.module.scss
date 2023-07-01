@@ -1,9 +1,26 @@
 @import "src/common/styles/sass/variables";
 
 .header {
-  height: 80px;
-  background-color: #000;
+  //height: 80px;
+  //background-color: #000;
+  //display: flex;
+  //justify-content: flex-end;
+  //align-items: center;
+
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  flex-wrap: nowrap;
+  height: 80px;
+  padding: 0 30px;
+  position: fixed;
+  opacity: 0.9;
+  z-index: 9999;
+  left: 0;
+  right: 0;
+}
+
+.scrolled {
+  background-color: $bgSecondaryColor;
 }

@@ -3,24 +3,16 @@
 @import "src/common/components/Button/Button.module";
 
 .nav {
-  margin-right: 30px;
-  width: 300px;
   display: flex;
   justify-content: space-between;
+  width: 300px;
+  margin-left: auto;
 
-  //a {
-  //  margin: 0 0 5px;
-  //  text-decoration: none;
-  //  color: $textSecondaryColor;
-  //  position: relative;
-  //
-  //  @include text(400, 16px, none, 1px, 1.2)
-  //}
-
-  .btn {
+  a {
     @include text(400, 16px, none, 1px, 1.2);
     @extend .btn;
     padding: 10px 10px;
+
     &::after {
       height: 3px;
     }
@@ -36,6 +28,18 @@
         transition: all 0.3s ease-in-out 0s;
       }
     }
+  }
 
+  .active {
+    @include text(400, 16px, none, 1px, 1.2);
+
+    &::after {
+      height: 10px;
+    }
+
+  }
+
+  @media screen and (max-width: 400px) {
+    display: none;
   }
 }

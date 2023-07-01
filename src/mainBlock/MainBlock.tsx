@@ -5,7 +5,7 @@ import ReactTypingEffect from 'react-typing-effect';
 
 export const MainBlock = () => {
     return (
-        <div className={s.mainBlock}>
+        <div id={'main'} className={s.mainBlock}>
             <div className={s.container}>
                 <Fade direction={'left'}
                       duration={1500}

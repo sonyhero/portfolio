@@ -3,7 +3,7 @@
 @import "src/common/components/Button/Button.module";
 
 .contactsBlock {
-  //height: 60vh;
+  //height: 55vh;
   background-color: $bgColor;
 
   .contactsContainer {
@@ -41,7 +41,7 @@
       }
 
       .commentArea {
-        height: 100px;
+        height: 150px;
         margin: 0 0 20px;
         resize: none;
       }

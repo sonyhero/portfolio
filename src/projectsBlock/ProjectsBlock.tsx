@@ -41,7 +41,7 @@ export const ProjectsBlock: React.FC = () => {
     })
 
     return (
-        <div className={s.projectsBlock}>
+        <div id={'projects'} className={s.projectsBlock}>
             <div className={s.projectsContainer}>
                 <Fade direction={'down'} duration={1500}><Tittle text={'Projects'}/></Fade>
                 <Fade duration={1500} delay={300}>

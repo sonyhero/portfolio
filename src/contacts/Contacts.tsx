@@ -5,7 +5,7 @@ import {Fade} from 'react-awesome-reveal';
 
 export const Contacts: React.FC = () => {
     return (
-        <div className={s.contactsBlock}>
+        <div id={'contacts'} className={s.contactsBlock}>
             <Fade duration={1000}>
             <div className={s.contactsContainer}>
                 <Fade direction={'down'} duration={1500} delay={500}><Tittle text={'Contacts'}/></Fade>
