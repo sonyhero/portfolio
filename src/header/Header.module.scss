@@ -23,4 +23,8 @@
 
 .scrolled {
   background-color: $bgSecondaryColor;
+
+  @media (max-width: 400px) {
+    background-color: transparent;
+  }
 }
