@@ -9,12 +9,13 @@ export const MainBlock = () => {
             <div className={s.container}>
                 <Fade direction={'left'}
                       duration={1500}
+                      delay={500}
                 >
                     <div className={s.greeting}>
                         <div className={s.firstName}><h1>Anton</h1></div>
                         <div className={s.secondName}><span>Acharatniuk</span></div>
                         <div className={s.description}>
-                            <ReactTypingEffect speed={200} text={['Creative Front-end developer']}/>
+                            <ReactTypingEffect speed={100} text={['Creative Front-end developer']}/>
                         </div>
                     </div>
                 </Fade>
