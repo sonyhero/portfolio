@@ -2,11 +2,11 @@
 @import "src/common/styles/sass/mixins";
 
 .remoteBlock {
-  height: 30vh;
+  height: 40vh;
   background-color: $bgSecondaryColor;
-  //@media screen and (max-width: 1040px) {
-  //  height: 40vh;
-  //}
+  @media screen and (max-width: 570px) {
+    height: 50vh;
+  }
 
   .remoteContainer {
     @include container();
