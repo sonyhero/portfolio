@@ -1,4 +1,5 @@
 import s from './RemoteWork.module.scss'
+import style from '../common/components/Button/Button.module.scss'
 import {Tittle} from '../common/components/title/Title';
 import React from 'react';
 import {Button} from '../common/components/Button/Button';
@@ -11,8 +12,8 @@ export const RemoteWork: React.FC = () => {
             <div className={s.remoteContainer}>
                 <Fade direction={'down'} duration={1500}><Tittle text={'Consider remote work'}/></Fade>
                 <Fade direction={'up'} duration={1500}>
-                    <Link to="contacts" className={s.viewBtn} spy={true} smooth={true}>
-                        <Button name={'Hire Me'}/>
+                    <Link to="contacts" className={`${s.viewBtn} ${style.btn}`} spy={true} smooth={true}>
+                        Hire Me
                     </Link>
                 </Fade>
             </div>

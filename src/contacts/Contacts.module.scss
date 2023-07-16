@@ -28,11 +28,33 @@
         background: $bgSecondaryColor;
         color: $textSecondaryColor;
         padding: 15px;
+        &:-webkit-autofill,
+        &-webkit-autofill:hover,
+        &-webkit-autofill:focus,
+        &-webkit-autofill:active {
+          -webkit-text-fill-color: $textSecondaryColor;
+          -webkit-box-shadow: 0 0 0 30px $bgSecondaryColor inset !important;
+        }
 
         &:focus {
           transition: all 0.4s ease-in-out 0s;
           border: 1px solid $bgSecondaryColor;
           box-shadow: 5px 5px 5px -3px $textSecondaryColor;
+        }
+        &:hover {
+          transition: all 0.4s ease-in-out 0s;
+          border: 1px solid $bgSecondaryColor;
+          box-shadow: 5px 5px 5px -3px $textSecondaryColor;
+        }
+      }
+
+      .errorMessage {
+        width: 80%;
+        color: $primaryColor;
+        @include text(400, 14px, none, 1px, 1.8);
+        height: 20px;
+        & p {
+          padding-left: 15px;
         }
       }
 
@@ -42,7 +64,7 @@
 
       .commentArea {
         height: 150px;
-        margin: 0 0 20px;
+        //margin: 0 0 20px;
         resize: none;
       }
 
@@ -55,7 +77,13 @@
       @extend .btn;
       background-color: $bgColor;
       max-width: none;
+      margin-top: 20px;
       @include text(600, 14px, uppercase, 1px, 1.2);
+      &:disabled {
+        &::after {
+          background-color: $bgSecondaryColor;
+        }
+      }
     }
   }
 }
