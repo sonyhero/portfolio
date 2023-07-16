@@ -3,9 +3,9 @@
 @import "src/common/styles/sass/shake";
 
 .skill {
-  width: 150px;
+  width: 130px;
   /*background-color: #d5bcc2;*/
-  @include flex(column, center, center, wrap);
+  @include flex(column, center, center, nowrap);
   text-align: center;
   padding: 20px;
 
