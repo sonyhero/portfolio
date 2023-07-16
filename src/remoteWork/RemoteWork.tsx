@@ -2,9 +2,8 @@ import s from './RemoteWork.module.scss'
 import style from '../common/components/Button/Button.module.scss'
 import {Tittle} from '../common/components/title/Title';
 import React from 'react';
-import {Button} from '../common/components/Button/Button';
 import {Fade} from 'react-awesome-reveal';
-import {Link} from "react-scroll";
+import {Link} from 'react-scroll';
 
 export const RemoteWork: React.FC = () => {
     return (
