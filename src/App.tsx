@@ -6,6 +6,8 @@ import {ProjectsBlock} from './projectsBlock/ProjectsBlock';
 import {RemoteWork} from './remoteWork/RemoteWork';
 import {Contacts} from './contacts/Contacts';
 import {Footer} from './footer/Footer'
+import {Toast} from './common/components/toast/Toast';
+import "react-toastify/dist/ReactToastify.css";
 
 export const App = () => {
 
@@ -18,6 +20,7 @@ export const App = () => {
             <RemoteWork/>
             <Contacts/>
             <Footer/>
+            <Toast/>
         </div>
     )
 }
