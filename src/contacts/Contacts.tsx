@@ -3,6 +3,8 @@ import {Tittle} from '../common/components/title/Title';
 import React from 'react';
 import {Fade} from 'react-awesome-reveal';
 import {SubmitHandler, useForm} from 'react-hook-form';
+import axios from 'axios';
+import {toast} from 'react-toastify';
 
 type ContactsType = {
     name: string
@@ -12,10 +14,21 @@ type ContactsType = {
 
 export const Contacts: React.FC = () => {
 
-    const {register, formState: {errors, isValid}, handleSubmit} = useForm<ContactsType>({mode: 'onBlur'})
+    const {register, formState: {errors, isValid}, handleSubmit, reset} = useForm<ContactsType>({mode: 'onBlur'})
 
     const onSubmit: SubmitHandler<ContactsType> = (data) => {
-        console.log(JSON.stringify(data))
+        // console.log(JSON.stringify(data))
+        toast.error("Sorry, there's been an error");
+        axios
+            .post("https://gmail-nodejs.vercel.app/sendMessage", data)
+            .then(() => {
+                toast.success("Thank you for your letter!");
+                reset();
+            })
+            .catch(() => {
+                toast.error("Sorry, there's been an error");
+            });
+
     }
 
     return (
