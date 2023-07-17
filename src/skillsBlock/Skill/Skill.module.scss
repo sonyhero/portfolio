@@ -3,11 +3,16 @@
 @import "src/common/styles/sass/shake";
 
 .skill {
-  width: 130px;
+  width: 150px;
   /*background-color: #d5bcc2;*/
-  @include flex(column, center, center, nowrap);
+  @include flex(column, center, center, wrap);
   text-align: center;
   padding: 20px;
+
+  @media screen and (max-width: 750px) {
+    width: 130px;
+    @include flex(column, center, center, nowrap);
+  }
 
   .skillWrap {
     position: relative;
