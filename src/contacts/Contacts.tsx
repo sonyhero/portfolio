@@ -17,8 +17,6 @@ export const Contacts: React.FC = () => {
     const {register, formState: {errors, isValid}, handleSubmit, reset} = useForm<ContactsType>({mode: 'onBlur'})
 
     const onSubmit: SubmitHandler<ContactsType> = (data) => {
-        // console.log(JSON.stringify(data))
-        toast.error("Sorry, there's been an error");
         axios
             .post("https://gmail-nodejs.vercel.app/sendMessage", data)
             .then(() => {
