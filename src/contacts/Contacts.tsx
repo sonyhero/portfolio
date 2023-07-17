@@ -18,7 +18,7 @@ export const Contacts: React.FC = () => {
 
     const onSubmit: SubmitHandler<ContactsType> = (data) => {
         axios
-            .post("https://gmail-nodejs.vercel.app/sendMessage", data)
+            .post("https://gmail-nodejs-eta.vercel.app/sendMessage", data)
             .then(() => {
                 toast.success("Thank you for your letter!");
                 reset();
