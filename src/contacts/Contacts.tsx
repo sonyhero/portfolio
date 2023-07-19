@@ -68,7 +68,7 @@ export const Contacts: React.FC = () => {
                         <div className={s.errorMessage}>{errors?.comment &&
                             <p>{errors?.comment?.message || 'Some error!'}</p>}</div>
                         <Fade direction={'down'} duration={1500} delay={500}><span>
-                        <button disabled={!isValid} className={s.sbtBtn} type={'submit'}>Sand Message</button>
+                        <button disabled={!isValid} className={s.sbtBtn} type={'submit'}>Send Message</button>
                     </span></Fade>
                     </form>
                 </div>
