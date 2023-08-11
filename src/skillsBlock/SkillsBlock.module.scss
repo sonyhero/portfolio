@@ -7,6 +7,7 @@
 
   .skillsContainer {
     @include container();
+    width: 60%;
     @include flex(column, flex-start, center, wrap);
     .skills {
       margin-top: 30px;
@@ -15,6 +16,10 @@
       justify-content: space-around;
       flex-wrap: wrap;
     }
+    @media screen and (max-width: 1600px) {
+      width: 80%;
+    }
+
   }
 }
 

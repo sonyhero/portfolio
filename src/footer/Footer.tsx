@@ -26,14 +26,13 @@ export const Footer: React.FC = () => {
 
     const mappedSocials = socials.map((el, index) => {
         return (
-            <a
-                key={index}
+            <a key={index}
                 href={el.url}
                 style={el.img}
                 className={s.social}
                 target="_blank"
                 rel="noreferrer"
-            ></a>
+            > </a>
         )
     })
 
@@ -41,11 +40,13 @@ export const Footer: React.FC = () => {
         <div className={s.footerBlock}>
             <div className={s.footerContainer}>
                 <Fade direction={'down'} duration={1500}><h3 className={s.title}>YOU CAN FIND ME HERE</h3></Fade>
-                <Fade  direction={'up'} duration={1500}><div className={s.socialContainer}>
+                <Fade direction={'up'} duration={1500}>
+                    <div className={s.socialContainer}>
                         {mappedSocials}
                     </div>
                 </Fade>
-                <Fade  direction={'up'} duration={1500} delay={500}><div className={s.titleFoot}><h6>2023 All rights reserved</h6></div>
+                <Fade direction={'up'} duration={1500} delay={500}>
+                    <div className={s.titleFoot}><h6>2023 All rights reserved</h6></div>
                 </Fade>
             </div>
         </div>
