@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7c93e838.css",
-    "main.js": "/portfolio/static/js/main.1701f023.js",
+    "main.css": "/portfolio/static/css/main.a5e702db.css",
+    "main.js": "/portfolio/static/js/main.35482c10.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/mainPhoto1.jpg": "/portfolio/static/media/mainPhoto1.951ba7ecafc1b80bdbb3.jpg",
     "static/media/myMoney.svg": "/portfolio/static/media/myMoney.309d2387f773c57624467127e97250cb.svg",
     "static/media/social.svg": "/portfolio/static/media/social.44b4c9cc4f8672bcd58081fe04444ed7.svg",
     "static/media/spotify.svg": "/portfolio/static/media/spotify.94a1363d97ab82fad0e879f354870cc2.svg",
     "static/media/todolist.svg": "/portfolio/static/media/todolist.2f77dc32418a5d581acd6cc741a27257.svg",
+    "static/media/cards.svg": "/portfolio/static/media/cards.648bbd2af3bb8ab2a2d4d58dda522292.svg",
     "static/media/postman.svg": "/portfolio/static/media/postman.84f798698d454c2295c32ea3007a5777.svg",
     "static/media/reactQuery.svg": "/portfolio/static/media/reactQuery.ef4534ca6921beda06959e9af4627ee5.svg",
     "static/media/restAPI.svg": "/portfolio/static/media/restAPI.a904f26d160eebaa5a612f94c1448465.svg",
@@ -31,12 +32,12 @@
     "static/media/burger.svg": "/portfolio/static/media/burger.12bb766eee3c9af26163d5d709b8808d.svg",
     "static/media/telegram.svg": "/portfolio/static/media/telegram.66b48acf1cc85877ae45fdd559d7f807.svg",
     "static/media/angular.svg": "/portfolio/static/media/angular.18de594a770e8914e933bb5763640949.svg",
-    "main.7c93e838.css.map": "/portfolio/static/css/main.7c93e838.css.map",
-    "main.1701f023.js.map": "/portfolio/static/js/main.1701f023.js.map",
+    "main.a5e702db.css.map": "/portfolio/static/css/main.a5e702db.css.map",
+    "main.35482c10.js.map": "/portfolio/static/js/main.35482c10.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c93e838.css",
-    "static/js/main.1701f023.js"
+    "static/css/main.a5e702db.css",
+    "static/js/main.35482c10.js"
   ]
 }
