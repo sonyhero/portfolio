@@ -9,34 +9,39 @@ export const ProjectsBlock: React.FC = () => {
 
     const projects = [
         {
-            link: 'https://t.me/o_an_ton',
             title: 'Todolist',
+            link: 'https://sonyhero.github.io/todo-list',
+            codeLink: 'https://github.com/sonyhero/todo-list',
             bgImg: {backgroundImage: `url(${svgProjects.todolist})`},
             text: 'Complex project that using React-hooks, Redux, Axios and Rest API'
         },
         {
-            link: 'https://t.me/o_an_ton',
             title: 'My Money',
+            link: 'https://github.com/shinkar94/myMoney2',
+            codeLink: 'https://github.com/shinkar94/myMoney2',
             bgImg: {backgroundImage: `url(${svgProjects.myMoney})`},
             text: 'Handy application for family budgeting'
         },
         {
-            link: 'https://t.me/o_an_ton',
             title: 'Social network',
+            link: 'https://sonyhero.github.io/samurai-way',
+            codeLink: 'https://github.com/sonyhero/samurai-way',
             bgImg: {backgroundImage: `url(${svgProjects.social})`},
             text: 'Developers social network. Many features still in progress. But you can use base functions of any social network'
         },
         {
-            link: 'https://t.me/o_an_ton',
-            title: 'Clone Spotify',
-            bgImg: {backgroundImage: `url(${svgProjects.spotify})`},
-            text: 'Digital music service that gives you access to millions of songs'
+            title: 'Learn cards',
+            link: 'https://cards-sonyhero.vercel.app/',
+            codeLink: 'https://github.com/sonyhero/cards',
+            bgImg: {backgroundImage: `url(${svgProjects.cards})`},
+            text: 'Complex project that using React, RTK Query, Storybook, RadixUI and Rest API'
         },
     ]
 
     const mappedProjects = projects.map((p, index) => {
         return (
-            <Project key={index} title={p.title} description={p.text} style={p.bgImg} link={p.link}/>
+            <Project key={index} title={p.title} description={p.text}
+                     style={p.bgImg} link={p.link} codeLink={p.codeLink}/>
         )
     })
 

@@ -32,6 +32,11 @@
   }
 
   .projectInfo {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    //justify-content: space-around;
+    gap: 40px;
     padding: 25px 20px;
 
     .viewBtn {

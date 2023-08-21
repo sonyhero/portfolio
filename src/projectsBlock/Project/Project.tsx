@@ -3,16 +3,16 @@ import React from 'react';
 import {Button} from '../../common/components/Button/Button';
 
 
-
 type SkillPropsType = {
     title: string
     description: string
-    style: {backgroundImage: string}
+    style: { backgroundImage: string }
     link: string
+    codeLink: string
 }
 
 export const Project: React.FC<SkillPropsType> = (props) => {
-    const {title, description, style, link} = props
+    const {title, description, style, link, codeLink} = props
     return (
 
         <div className={s.project}>
@@ -22,7 +22,10 @@ export const Project: React.FC<SkillPropsType> = (props) => {
                 <div className={s.viewBtn}>
                     <Button name={title} link={link}/>
                 </div>
-                <div className={s.description}><span >{description}</span></div>
+                <div className={s.viewBtn}>
+                    <Button name={'Code'} link={codeLink}/>
+                </div>
+                <div className={s.description}><span>{description}</span></div>
             </div>
         </div>
     )
