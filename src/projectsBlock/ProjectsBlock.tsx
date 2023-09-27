@@ -9,7 +9,7 @@ export const ProjectsBlock: React.FC = () => {
 
     const projects = [
         {
-            title: 'Todolist',
+            title: 'Task tracker',
             link: 'https://sonyhero.github.io/todo-list',
             codeLink: 'https://github.com/sonyhero/todo-list',
             bgImg: {backgroundImage: `url(${svgProjects.todolist})`},
@@ -23,14 +23,14 @@ export const ProjectsBlock: React.FC = () => {
             text: 'Handy application for family budgeting'
         },
         {
-            title: 'Social network',
+            title: 'Developer network',
             link: 'https://sonyhero.github.io/samurai-way',
             codeLink: 'https://github.com/sonyhero/samurai-way',
             bgImg: {backgroundImage: `url(${svgProjects.social})`},
             text: 'Developers social network. Many features still in progress. But you can use base functions of any social network'
         },
         {
-            title: 'Learn cards',
+            title: 'Learning cards',
             link: 'https://cards-sonyhero.vercel.app/',
             codeLink: 'https://github.com/sonyhero/cards',
             bgImg: {backgroundImage: `url(${svgProjects.cards})`},
