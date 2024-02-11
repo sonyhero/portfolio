@@ -72,6 +72,7 @@ export const Contacts: React.FC = () => {
                     </span></Fade>
                     </form>
                 </div>
+
             </Fade>
         </div>
     )
