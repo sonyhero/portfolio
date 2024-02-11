@@ -1,0 +1,50 @@
+.navToggle {
+  position: absolute;
+  top: 24px;
+  right: 2px;
+  cursor: pointer;
+
+  -webkit-transform: (-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  &:focus {
+    outline-width: 0;
+  }
+
+  [class*='bar'] {
+    background: #b42f53;
+    display: block;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transition: .2s ease all;
+
+    border-radius: 2px;
+    height: 4px;
+    width: 26px;
+    margin-bottom: 2px;
+
+    &.barBot {
+      margin-bottom: 0;
+    }
+  }
+
+  &.opened {
+    .barTop {
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      -webkit-transform-origin: 15% 15%;
+      transform-origin: 15% 15%;
+    }
+
+    .barMid {
+      opacity: 0;
+    }
+
+    .barBot {
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-transform-origin: 15% 95%;
+      transform-origin: 15% 95%;
+    }
+  }
+}
