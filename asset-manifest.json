@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.03f7abff.css",
-    "main.js": "/portfolio/static/js/main.36bbfc8e.js",
+    "main.css": "/portfolio/static/css/main.2a30e36a.css",
+    "main.js": "/portfolio/static/js/main.36d40645.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/mainPhoto1.jpg": "/portfolio/static/media/mainPhoto1.08eeb650ca2d421b92d9.jpg",
     "static/media/myMoney.svg": "/portfolio/static/media/myMoney.309d2387f773c57624467127e97250cb.svg",
     "static/media/social.svg": "/portfolio/static/media/social.44b4c9cc4f8672bcd58081fe04444ed7.svg",
-    "static/media/spotify.svg": "/portfolio/static/media/spotify.94a1363d97ab82fad0e879f354870cc2.svg",
+    "static/media/inctagram.svg": "/portfolio/static/media/inctagram.8775ce214aef7753d8d85a4d0761d9bc.svg",
     "static/media/todolist.svg": "/portfolio/static/media/todolist.2f77dc32418a5d581acd6cc741a27257.svg",
     "static/media/cards.svg": "/portfolio/static/media/cards.648bbd2af3bb8ab2a2d4d58dda522292.svg",
     "static/media/postman.svg": "/portfolio/static/media/postman.84f798698d454c2295c32ea3007a5777.svg",
@@ -31,12 +31,12 @@
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.5e593ac16320346a546c444c58aa52ec.svg",
     "static/media/telegram.svg": "/portfolio/static/media/telegram.66b48acf1cc85877ae45fdd559d7f807.svg",
     "static/media/angular.svg": "/portfolio/static/media/angular.18de594a770e8914e933bb5763640949.svg",
-    "main.03f7abff.css.map": "/portfolio/static/css/main.03f7abff.css.map",
-    "main.36bbfc8e.js.map": "/portfolio/static/js/main.36bbfc8e.js.map",
+    "main.2a30e36a.css.map": "/portfolio/static/css/main.2a30e36a.css.map",
+    "main.36d40645.js.map": "/portfolio/static/js/main.36d40645.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.03f7abff.css",
-    "static/js/main.36bbfc8e.js"
+    "static/css/main.2a30e36a.css",
+    "static/js/main.36d40645.js"
   ]
 }
