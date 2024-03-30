@@ -16,11 +16,11 @@ export const ProjectsBlock: React.FC = () => {
             text: 'Complex project that using React-hooks, Redux, Axios and Rest API'
         },
         {
-            title: 'My Money',
-            link: 'https://github.com/shinkar94/myMoney2',
-            codeLink: 'https://github.com/shinkar94/myMoney2',
-            bgImg: {backgroundImage: `url(${svgProjects.myMoney})`},
-            text: 'Handy application for family budgeting'
+            title: 'Inctagram',
+            link: 'https://project-inctagram.vercel.app/',
+            codeLink: 'https://github.com/sonyhero/project-inctagram',
+            bgImg: {backgroundImage: `url(${svgProjects.inctagram})`},
+            text: 'Project Inctagram is a social network application built on the NextJS framework with a microservices architecture'
         },
         {
             title: 'Developer network',
